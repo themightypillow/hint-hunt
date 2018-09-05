@@ -1,0 +1,49 @@
+.clue {
+  margin-bottom: 1rem;
+  font-size: 0.925rem;
+
+  &_boxes {
+    margin-top: 0.5rem;
+  }
+
+  &_checkbox {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    border: 2px solid $red;
+    margin-right: 0.25rem;
+    position: relative;
+
+    &_green {
+      border-color: $green;
+    }
+  }
+
+  &_checkmark {
+    position: absolute;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    transform: rotate(45deg);
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0.2rem;
+      height: 0.75rem;;
+      background-color: $green;
+      left: 0.45rem;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0.5rem;
+      height: 0.2rem;
+      background-color: $green;
+      top: 0.6rem;
+      left: 0.15rem;
+    }
+  }
+
+}

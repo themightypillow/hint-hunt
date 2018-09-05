@@ -1,0 +1,19 @@
+/* Variables */
+$grey: #3e424b;
+$darkgrey: #2b2b2b;
+$red: #b03c2a;
+$darkred: #892f21;
+$white: #F4EEF1;
+$navy: #2B303A;
+$green: #53dd6c;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: $darkgrey;
+  color: $white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}

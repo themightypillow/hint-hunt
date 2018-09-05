@@ -1,0 +1,98 @@
+.hinthunt {
+  margin: 0 2rem;
+
+  &_icon {
+    position: fixed;
+    height: 1rem;
+    width: 1rem;
+    border: 5px solid $red;
+    border-radius: 5rem;
+    top: 1.3rem;
+    left: 3rem;
+    z-index: 1;
+    transition: border 0.2s ease-out;
+
+    &:after {
+      position: fixed;
+      content: "";
+      height: 0.5rem;
+      width: 1rem;
+      background: $red;
+      transform: rotate(45deg);
+      top: 2.7rem;
+      left: 4rem;
+      transition: background 0.2s ease-out;
+
+      @mixin atSmall {
+        left: 6rem;
+      }
+    }
+
+    &:hover {
+      border-color: $grey;
+    }
+
+    &:hover:after {
+      background: $grey;
+    }
+
+    @mixin atSmall {
+      left: 5rem;
+    }
+
+    @mixin atMedium {
+      display: none;
+    }
+  }
+
+  &_header {
+    text-align: center;
+
+    @mixin atSmall {
+      letter-spacing: 0.5rem;
+    }
+
+    @mixin atMedium {
+      text-align: left;  
+    }
+  }
+  
+  &_main {
+    position: relative;
+
+    @mixin atMedium {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @mixin atXLarge {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+  }
+
+  &_sideinfo {
+    position: absolute;
+    background-color: $navy;
+    z-index: 2;
+    padding: 0.25rem;
+    box-sizing: border-box;
+    border: 0.2rem solid $grey;
+    left: -14rem;
+    transition: 0.3s;
+    
+    @mixin atMedium {
+      position: static;
+    }
+  }
+
+  &_icon:hover + &_sideinfo {
+    transition: 0.3s;
+    left: -2rem;
+  }
+
+  &_board {
+    transition: opacity 0.3s linear;
+  }
+  
+}

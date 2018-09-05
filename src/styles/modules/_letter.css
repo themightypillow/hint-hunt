@@ -1,0 +1,244 @@
+.letter {
+
+  &_box {
+    user-select: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @mixin atSmall {
+      height: 2.5rem;
+      width: 2.5rem;
+      font-size: 1.25rem;
+    }
+
+    @mixin atMedium {
+      height: 3rem;
+      width: 3rem;
+    }
+
+    @mixin atXLarge {
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+  }
+
+  &_circle {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid $red;
+    border-radius: 20px;
+
+    @mixin atSmall {
+      height: 60%;
+      width: 60%;
+      left: 20%;
+    }
+  }
+
+  &_left {
+    content: "";
+    height: 75%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    border-left: 2px solid $red;
+    border-top: 2px solid $red;
+    border-bottom: 2px solid $red;
+    border-radius: 20px 0 0 20px;
+    box-sizing: border-box;
+
+    @mixin atSmall {
+      height: 50%;
+    }
+  }
+
+  &_leftRight {
+    content: "";
+    height: 75%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    border-top: 2px solid $red;
+    border-bottom: 2px solid $red;
+    box-sizing: border-box;
+
+    @mixin atSmall {
+      height: 50%;
+    }
+  }
+
+  &_right {
+    content: "";
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    border-right: 2px solid $red;
+    border-top: 2px solid $red;
+    border-bottom: 2px solid $red;
+    border-radius: 0 20px 20px 0;
+    box-sizing: border-box;
+
+    @mixin atSmall {
+      height: 50%;
+    }
+  }
+
+  &_top {
+    content: "";
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    box-sizing: border-box;
+    border-left: 2px solid $red;
+    border-top: 2px solid $red;
+    border-right: 2px solid $red;
+    border-radius: 20px 20px 0 0;
+
+    @mixin atSmall {
+      width: 50%;
+    }
+  }
+
+  &_topBottom {
+    content: "";
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    box-sizing: border-box;
+    border-left: 2px solid $red;
+    border-right: 2px solid $red;
+
+    @mixin atSmall {
+      width: 50%;
+    }
+  }
+
+  &_bottom {
+    content: "";
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    box-sizing: border-box;
+    border-left: 2px solid $red;
+    border-bottom: 2px solid $red;
+    border-right: 2px solid $red;
+    border-radius: 0 0 20px 20px;
+
+    @mixin atSmall {
+      width: 50%;
+    }
+  }
+
+  &_topLeft {
+    content: "";
+    height: 75%;
+    width: 142%;
+    position: absolute;
+    border-left: 2px solid $red;
+    border-top: 2px solid $red;
+    border-bottom: 2px solid $red;
+    border-radius: 20px 0 0 20px;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+
+    @mixin atSmall {
+      height: 50%;
+    }
+  }
+
+  &_backSlash {
+    content: "";
+    height: 75%;
+    width: 142%;
+    position: absolute;
+    box-sizing: border-box;
+    border-top: 2px solid $red;
+    border-bottom: 2px solid $red;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+
+    @mixin atSmall {
+      height: 50%;
+    }
+  }
+
+  &_bottomRight {
+    content: "";
+    height: 75%;
+    width: 142%;
+    position: absolute;
+    box-sizing: border-box;
+    border-right: 2px solid $red;
+    border-top: 2px solid $red;
+    border-bottom: 2px solid $red;
+    border-radius: 0 20px 20px 0;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+
+    @mixin atSmall {
+      height: 50%;
+    }
+  }
+
+  &_topRight {
+    content: "";
+    height: 142%;
+    width: 75%;
+    position: absolute;
+    box-sizing: border-box;
+    border-left: 2px solid $red;
+    border-top: 2px solid $red;
+    border-right: 2px solid $red;
+    border-radius: 20px 20px 0 0;
+    transform: rotate(45deg);
+
+    @mixin atSmall {
+      width: 50%;
+    }
+  }
+
+  &_forwardSlash {
+    content: "";
+    height: 142%;
+    width: 75%;
+    position: absolute;
+    box-sizing: border-box;
+    border-left: 2px solid $red;
+    border-right: 2px solid $red;
+    transform: rotate(45deg);
+
+    @mixin atSmall {
+      width: 50%;
+    }
+  }
+
+  &_bottomLeft {
+    content: "";
+    height: 142%;
+    width: 75%;
+    position: absolute;
+    box-sizing: border-box;
+    border-left: 2px solid $red;
+    border-bottom: 2px solid $red;
+    border-right: 2px solid $red;
+    border-radius: 0 0 20px 20px;
+    transform: rotate(45deg);
+
+    @mixin atSmall {
+      width: 50%;
+    }
+  }
+
+}
