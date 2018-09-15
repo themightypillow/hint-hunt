@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "test": "jest ./src/tests"
+    "test": "jest ./src/tests",
+    "generate": "node ./src/generator/main.js"
   },
   "author": "Cheri Anne",
   "license": "MIT",
@@ -37,6 +38,8 @@
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
+    "dotenv": "^6.0.0",
+    "firebase": "^5.5.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
   },
@@ -51,6 +54,8 @@
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./src/tests/enzyme.setup.js",
-    "setupFiles": ["raf/polyfill"]
+    "setupFiles": [
+      "raf/polyfill"
+    ]
   }
 }
