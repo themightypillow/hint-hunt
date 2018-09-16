@@ -29,6 +29,7 @@ fs.readFile(process.argv[3], "utf8", (err, data) => {
     return acc;
   }, {});
   const puzzle = new WordSearchGenerator(words, 14, 13); // all grids are 14x13 by default
+  puzzle.create();
   addToDatabase(title, clues, words, puzzle.grid, puzzle.rows, puzzle.columns);
 });
 

@@ -16,8 +16,6 @@ class WordSearchGenerator {
       leftdown: [1, -1],
       leftup: [-1, -1],
     };
-    this.generate();
-    this.fillEmpty();
   }
 
   index(row, column) {
@@ -120,14 +118,9 @@ class WordSearchGenerator {
     }
   }
 
-  unused() {
-    let count = 0;
-    for(let i = 0; i < this.size; i++) {
-      if(!this.grid[i]) {
-        count++;
-      }
-    }
-    return count;
+  create() {
+    this.generate();
+    this.fillEmpty();
   }
 }
 

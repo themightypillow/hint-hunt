@@ -68,6 +68,7 @@ class HintHunt extends React.Component {
   componentWillMount() {
     let columns = 13;
     let generator = new Generator(this.state.unfound, 14, columns);
+    generator.create();
     this.setState(() => ({
       letters: generator.grid,
       columns: columns
