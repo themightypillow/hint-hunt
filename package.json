@@ -53,7 +53,7 @@
     ]
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./src/tests/enzyme.setup.js",
+    "setupTestFrameworkScriptFile": "./src/tests/test.setup.js",
     "setupFiles": [
       "raf/polyfill"
     ]

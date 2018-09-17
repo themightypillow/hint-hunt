@@ -1,24 +1,20 @@
-if(process.argv.length < 4) {
-  console.log("Usage: npm run generate YYYYMMDD filename");
-  process.exit();
-}
-
 // handle environment variables for firebase
 const env = require("dotenv").config();
 if(env.error) throw env.error;
 
 const fs = require("fs");
-const database = require("../firebase/firebase");
+const firebaseDatabase = require("../firebase/firebase");
 const WordSearchGenerator = require("./WordSearchGenerator");
 
 /* files are expected to be in the following format:
       [TITLE]
       [CLUE DESCRIPTION]:[ANSWER...]
-      ...      
+   with no empty lines
 */
-fs.readFile(process.argv[3], "utf8", (err, data) => {
-  if(err) throw err;
-  const lines = data.split(/\r?\n/).slice(0, -1); // for both windows and unix line endings, also gets rid of empty last line
+function readFile(filename) {
+  let data = fs.readFileSync(filename, "utf8");
+  // for both windows and unix line endings
+  const lines = data.split(/\r?\n/);
   const title = lines.shift();
   let words = [];
   const clues = lines.reduce((acc, cur) => {
@@ -28,26 +24,43 @@ fs.readFile(process.argv[3], "utf8", (err, data) => {
     words.push(...answer);
     return acc;
   }, {});
-  const puzzle = new WordSearchGenerator(words, 14, 13); // all grids are 14x13 by default
+  let puzzle = new WordSearchGenerator(words, 14, 13); // all grids are 14x13 by default
   puzzle.create();
-  addToDatabase(title, clues, words, puzzle.grid, puzzle.rows, puzzle.columns);
-});
+  return { puzzle, clues, words, title };
+}
 
-function addToDatabase(title, clues, words, grid, rows, columns) {
-  database.ref(process.argv[2]).set({
+/*
+  puzzle - a WordSearchGenerator object
+  clues - an object with keys: description and values: answers
+  title - title as string
+  database - imported firebase database
+*/
+function addToDatabase(date, puzzle, clues, words, title, database) {
+  return database.ref(date).set({
     title,
     clues,
     words,
-    grid,
-    rows,
-    columns
-  }).then(() => {
+    grid: puzzle.grid,
+    rows: puzzle.rows,
+    columns: puzzle.columns
+  });
+}
+
+if(process.argv[2]) {
+  let info = readFile(process.argv[3]);
+  addToDatabase(process.argv[2], info.puzzle, info.clues, info.words, info.title, firebaseDatabase)
+    .then(() => {
       console.log("Data saved successfully");
       process.exit();
-  }).catch((e) => {
+    }).catch((e) => {
       console.log(
         `Failed to write to database
         ${e}`);
-      process.exit();
-  });
+        process.exit(0);
+    });
 }
+
+module.exports = {
+  readFile,
+  addToDatabase
+};
