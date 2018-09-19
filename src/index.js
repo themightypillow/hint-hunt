@@ -1,6 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import HintHunt from "./components/HintHunt";
+import HintHuntModel from "./models/HintHuntModel";
 import "./style.css";
 
-ReactDOM.render(<HintHunt />, document.getElementById("index"));
+const store = new HintHuntModel();
+
+store.fetchPuzzle("20180914").then((snapshot) => {
+  store.setPuzzle(snapshot);
+  ReactDOM.render(<HintHunt store={store} />, document.getElementById("index"));
+  window.store = store;
+}).catch((e) => {
+  throw e;
+});

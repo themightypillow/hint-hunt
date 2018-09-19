@@ -1,13 +1,20 @@
 import React from "react";
+import { observer } from "mobx-react";
 import Clue from "./Clue";
 
-const SideInfo = (props) => (
-  <div>
-    {
-      Object.keys(props.clues).map((clue) => 
-      <Clue text={clue} answers={props.clues[clue]} key={clue} />)
-    }
-  </div>
-);
+@observer
+class SideInfo extends React.Component {
+  render() {
+    const store = this.props.store;
+    return (
+      <div>
+       {
+         Object.keys(store.clues).map(clue =>
+         <Clue key={clue} text={clue} answers={store.clues[clue]} /> )
+       }
+      </div>
+    );
+  }
+}
 
 export default SideInfo;

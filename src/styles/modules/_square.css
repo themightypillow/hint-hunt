@@ -1,33 +1,30 @@
-.letter {
+.square {
+  user-select: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &_box {
-    user-select: none;
-    height: 1.5rem;
-    width: 1.5rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
 
-    &:hover {
-      cursor: pointer;
-    }
+  @mixin atSmall {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.25rem;
+  }
 
-    @mixin atSmall {
-      height: 2.5rem;
-      width: 2.5rem;
-      font-size: 1.25rem;
-    }
+  @mixin atMedium {
+    height: 3rem;
+    width: 3rem;
+  }
 
-    @mixin atMedium {
-      height: 3rem;
-      width: 3rem;
-    }
-
-    @mixin atXLarge {
-      height: 3.5rem;
-      width: 3.5rem;
-    }
+  @mixin atXLarge {
+    height: 3.5rem;
+    width: 3.5rem;
   }
 
   &_circle {
