@@ -15,7 +15,7 @@ class Modal extends React.Component {
               {store.modal.text}
               {
                 store.modal.button && 
-                <button onClick={store.hideModal}>{store.modal.buttonText}</button>
+                <button onClick={store.modal.hide}>{store.modal.buttonText}</button>
               }
             </div>
         }

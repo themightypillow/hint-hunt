@@ -9,7 +9,7 @@ class HintHunt extends React.Component {
   render() {
     const store = this.props.store;
     return (      
-      <div className="hinthunt">
+      <div className="hinthunt" onMouseUp={store.board.mouseUp}>
         {
           store.modal.visible &&
           <Modal store={store}/>
@@ -21,7 +21,7 @@ class HintHunt extends React.Component {
             <SideInfo store={store} />
           </div>
           <div className="hinthunt_board">
-            <Board store={store} />
+            <Board board={store.board} />
           </div>
         </div>
       </div>

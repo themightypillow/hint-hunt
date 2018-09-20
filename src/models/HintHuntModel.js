@@ -3,17 +3,15 @@ import moment from "moment";
 import database from "../firebase/firebase";
 import ModalModel from "./ModalModel";
 import WordModel from "./WordModel";
-import LetterModel from "./LetterModel";
+import BoardModel from "./BoardModel";
 
 // state can only be changed inside @action methods
-// configure({ enforceActions: "observed" });
+configure({ enforceActions: "observed" });
 
 class HintHuntModel {
-  @observable grid = [];
+  @observable board;
   @observable clues = {};
   @observable title = "";
-  // @observable guess = [];
-  // @observable isMouseDown = false;
   @observable modal = new ModalModel(); 
 
   @action fetchPuzzle = (date) => {
@@ -28,7 +26,7 @@ class HintHuntModel {
     this.modal.text = `${moment(snapshot.key).format("MMM DD, YYYY")} - ${data.title}`;
     this.modal.button = true;
     this.modal.buttonText = "Play Now";
-    this.grid = data.grid.map(letter => new LetterModel(letter));
+    this.board = new BoardModel(data.grid);
     this.clues = this.setClues(data.clues);
     this.title = data.title;
     this.modal.loading = false;
@@ -39,10 +37,6 @@ class HintHuntModel {
       acc[key] = clues[key].map(answer => new WordModel(answer));
       return acc;
     }, {});
-  }
-
-  @action hideModal = () => {
-    this.modal.visible = false;
   }
 }
 

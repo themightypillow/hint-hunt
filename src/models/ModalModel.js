@@ -1,4 +1,4 @@
-import { observable } from "mobx";
+import { observable, action } from "mobx";
 
 class ModalModel {
   @observable visible = false;
@@ -6,6 +6,10 @@ class ModalModel {
   @observable button = false;
   @observable buttonText = "";
   @observable loading = false;
+
+  @action hide = () => {
+    this.visible = false;
+  };
 }
 
 export default ModalModel;
