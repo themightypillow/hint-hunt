@@ -6,5 +6,9 @@
     grid-template-columns: repeat(13, 1fr);
     background: $grey;
   }
+
+  &_no_pointer {
+    pointer-events: none;
+  }
   
 }

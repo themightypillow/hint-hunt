@@ -5,7 +5,7 @@ class Board extends React.Component {
   render() {
     const board = this.props.board;
     return (
-      <div className="container">
+      <div className={`container ${board.win ? "board_no_pointer" : ""}`}>
         <div className="board_grid">
           {
             board.grid.map((letter, index) => 

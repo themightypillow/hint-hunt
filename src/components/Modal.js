@@ -5,17 +5,16 @@ import Loader from "./Loader";
 @observer
 class Modal extends React.Component {
   render() {
-    const store = this.props.store;
     return (
       <div className="modal">
         {
-          store.modal.loading ?
+          this.props.modal.loading ?
             <div className="modal_text"><Loader /></div> :
             <div className="modal_text">
-              {store.modal.text}
+              {this.props.modal.text}
               {
-                store.modal.button && 
-                <button onClick={store.modal.hide}>{store.modal.buttonText}</button>
+                this.props.modal.button && 
+                <button onClick={this.props.modal.hide}>{this.props.modal.buttonText}</button>
               }
             </div>
         }

@@ -11,8 +11,10 @@ configure({ enforceActions: "observed" });
 class HintHuntModel {
   @observable board;
   @observable clues = {};
+  @observable words = [];
   @observable title = "";
-  @observable modal = new ModalModel(); 
+  @observable modal = new ModalModel();
+  @observable showWin = false;
 
   @action fetchPuzzle = (date) => {
     this.modal.visible = true;
@@ -26,17 +28,31 @@ class HintHuntModel {
     this.modal.text = `${moment(snapshot.key).format("MMM DD, YYYY")} - ${data.title}`;
     this.modal.button = true;
     this.modal.buttonText = "Play Now";
-    this.board = new BoardModel(data.grid);
     this.clues = this.setClues(data.clues);
+    this.board = new BoardModel(data.grid, this.words);
     this.title = data.title;
-    this.modal.loading = false;
+    this.showWin = false;
   }
 
   @action setClues = (clues) => {
     return Object.keys(clues).reduce((acc, key) => {
-      acc[key] = clues[key].map(answer => new WordModel(answer));
+      acc[key] = clues[key].map(answer => {
+        let word = new WordModel(answer);
+        this.words.push(word);
+        return word;
+      });
       return acc;
     }, {});
+  }
+
+  @action checkWin = () => {
+    if(this.board.win) {
+      this.modal.visible = true;
+      this.modal.text = "You Win!";
+      this.modal.button = true;
+      this.modal.buttonText = "Close";
+      this.showWin = true;
+    }
   }
 }
 

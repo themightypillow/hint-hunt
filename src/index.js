@@ -9,6 +9,9 @@ const store = new HintHuntModel();
 store.fetchPuzzle("20180914").then((snapshot) => {
   store.setPuzzle(snapshot);
   ReactDOM.render(<HintHunt store={store} />, document.getElementById("index"));
+  setTimeout(() => {
+    store.modal.hideLoading();
+  }, 1000);
 }).catch((e) => {
   throw e;
 });

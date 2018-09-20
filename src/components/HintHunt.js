@@ -6,13 +6,19 @@ import Board from "./Board";
 
 @observer
 class HintHunt extends React.Component {
+  handleMouseUp = () => {
+    if(!this.props.store.showWin) {
+      this.props.store.board.checkGuess();
+      this.props.store.checkWin();
+    }
+  }
+
   render() {
     const store = this.props.store;
     return (      
-      <div className="hinthunt" onMouseUp={store.board.mouseUp}>
+      <div className="hinthunt" onMouseUp={this.handleMouseUp}>
         {
-          store.modal.visible &&
-          <Modal store={store}/>
+          store.modal.visible && <Modal modal={store.modal}/>
         }
         <h1 className="hinthunt_header">{store.title}</h1>
         <div className="hinthunt_main">

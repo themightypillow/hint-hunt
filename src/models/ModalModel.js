@@ -1,4 +1,7 @@
-import { observable, action } from "mobx";
+import { configure, observable, action } from "mobx";
+
+// state can only be changed inside @action methods
+configure({ enforceActions: "observed" });
 
 class ModalModel {
   @observable visible = false;
@@ -9,6 +12,10 @@ class ModalModel {
 
   @action hide = () => {
     this.visible = false;
+  };
+
+  @action hideLoading = () => {
+    this.loading = false;
   };
 }
 

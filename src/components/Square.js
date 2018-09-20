@@ -4,7 +4,7 @@ import { observer } from "mobx-react";
 @observer
 class Square extends React.Component {
   handleMouseDown = () => {
-    this.props.board.startGuess(this.props.letter);
+    this.props.board.setInitial(this.props.letter);
   }
 
   handleMouseOver = () => {
