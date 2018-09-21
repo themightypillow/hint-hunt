@@ -1,9 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Modal correctly 1`] = `
+exports[`Modal with text and button should render correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Modal />,
+  Symbol(enzyme.__unrendered__): <Modal
+    modal={
+      ModalModel {
+        "button": true,
+        "buttonText": "Click",
+        "loading": false,
+        "text": "Title",
+        "visible": true,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "ModalModel@1.keys",
+            "observers": Set {},
+          },
+          "name": "ModalModel@1",
+          "target": [Circular],
+          "values": Map {
+            "visible" => true,
+            "text" => "Title",
+            "button" => true,
+            "buttonText" => "Click",
+            "loading" => false,
+          },
+        },
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -20,7 +52,12 @@ ShallowWrapper {
       "children": <div
         className="modal_text"
       >
-        <button />
+        Title
+        <button
+          onClick={[Function]}
+        >
+          Click
+        </button>
       </div>,
       "className": "modal",
     },
@@ -31,24 +68,28 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          undefined,
-          <button />,
+          "Title",
+          <button
+            onClick={[Function]}
+          >
+            Click
+          </button>,
         ],
         "className": "modal_text",
       },
       "ref": null,
       "rendered": Array [
-        undefined,
+        "Title",
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
-            "onClick": undefined,
+            "children": "Click",
+            "onClick": [Function],
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "Click",
           "type": "button",
         },
       ],
@@ -65,7 +106,12 @@ ShallowWrapper {
         "children": <div
           className="modal_text"
         >
-          <button />
+          Title
+          <button
+            onClick={[Function]}
+          >
+            Click
+          </button>
         </div>,
         "className": "modal",
       },
@@ -76,26 +122,302 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            undefined,
-            <button />,
+            "Title",
+            <button
+              onClick={[Function]}
+            >
+              Click
+            </button>,
           ],
           "className": "modal_text",
         },
         "ref": null,
         "rendered": Array [
-          undefined,
+          "Title",
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
-              "onClick": undefined,
+              "children": "Click",
+              "onClick": [Function],
             },
             "ref": null,
-            "rendered": null,
+            "rendered": "Click",
             "type": "button",
           },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`should render Modal with loading screen 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Modal
+    modal={
+      ModalModel {
+        "button": false,
+        "buttonText": "",
+        "loading": true,
+        "text": "",
+        "visible": true,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "ModalModel@3.keys",
+            "observers": Set {},
+          },
+          "name": "ModalModel@3",
+          "target": [Circular],
+          "values": Map {
+            "visible" => true,
+            "text" => "",
+            "button" => false,
+            "buttonText" => "",
+            "loading" => true,
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="modal_text"
+      >
+        <Loader />
+      </div>,
+      "className": "modal",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Loader />,
+        "className": "modal_text",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="modal_text"
+        >
+          <Loader />
+        </div>,
+        "className": "modal",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Loader />,
+          "className": "modal_text",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`should render Modal with only text 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Modal
+    modal={
+      ModalModel {
+        "button": false,
+        "buttonText": "",
+        "loading": false,
+        "text": "Title",
+        "visible": true,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "ModalModel@5.keys",
+            "observers": Set {},
+          },
+          "name": "ModalModel@5",
+          "target": [Circular],
+          "values": Map {
+            "visible" => true,
+            "text" => "Title",
+            "button" => false,
+            "buttonText" => "",
+            "loading" => false,
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="modal_text"
+      >
+        Title
+      </div>,
+      "className": "modal",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          "Title",
+          false,
+        ],
+        "className": "modal_text",
+      },
+      "ref": null,
+      "rendered": Array [
+        "Title",
+        false,
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="modal_text"
+        >
+          Title
+        </div>,
+        "className": "modal",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Title",
+            false,
+          ],
+          "className": "modal_text",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Title",
+          false,
         ],
         "type": "div",
       },

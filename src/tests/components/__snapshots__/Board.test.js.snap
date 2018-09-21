@@ -1,13 +1,155 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Board correctly 1`] = `
+exports[`should render Board with grid 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Board
-    letters={
-      Array [
-        "A",
-      ]
+    board={
+      BoardModel {
+        "chain": Array [],
+        "columns": 13,
+        "grid": Array [
+          LetterModel {
+            "classes": Array [],
+            "columns": 13,
+            "index": 0,
+            "letter": "A",
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "LetterModel@1.keys",
+                "observers": Set {},
+              },
+              "name": "LetterModel@1",
+              "target": [Circular],
+              "values": Map {
+                "letter" => "A",
+                "classes" => Array [],
+                "index" => 0,
+              },
+            },
+          },
+          LetterModel {
+            "classes": Array [],
+            "columns": 13,
+            "index": 1,
+            "letter": "B",
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "LetterModel@2.keys",
+                "observers": Set {},
+              },
+              "name": "LetterModel@2",
+              "target": [Circular],
+              "values": Map {
+                "letter" => "B",
+                "classes" => Array [],
+                "index" => 1,
+              },
+            },
+          },
+        ],
+        "hover": undefined,
+        "initial": undefined,
+        "isMouseDown": false,
+        "popChainClasses": [Function],
+        "win": false,
+        "words": Array [
+          "A",
+        ],
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "BoardModel@3.keys",
+            "observers": Set {},
+          },
+          "name": "BoardModel@3",
+          "target": [Circular],
+          "values": Map {
+            "grid" => Array [
+              LetterModel {
+                "classes": Array [],
+                "columns": 13,
+                "index": 0,
+                "letter": "A",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "LetterModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "LetterModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "letter" => "A",
+                    "classes" => Array [],
+                    "index" => 0,
+                  },
+                },
+              },
+              LetterModel {
+                "classes": Array [],
+                "columns": 13,
+                "index": 1,
+                "letter": "B",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "LetterModel@2.keys",
+                    "observers": Set {},
+                  },
+                  "name": "LetterModel@2",
+                  "target": [Circular],
+                  "values": Map {
+                    "letter" => "B",
+                    "classes" => Array [],
+                    "index" => 1,
+                  },
+                },
+              },
+            ],
+            "words" => Array [
+              "A",
+            ],
+            "chain" => Array [],
+            "initial" => undefined,
+            "hover" => undefined,
+            "isMouseDown" => false,
+            "win" => false,
+          },
+        },
+      }
     }
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -26,15 +168,362 @@ ShallowWrapper {
       "children": <div
         className="board_grid"
       >
-        <Letter
-          char="A"
-          coords="NaN-NaN"
-          handleClick={[Function]}
-          handleMouseOver={[Function]}
-          handleMouseUp={[Function]}
+        <Square
+          board={
+            BoardModel {
+              "chain": Array [],
+              "columns": 13,
+              "grid": Array [
+                LetterModel {
+                  "classes": Array [],
+                  "columns": 13,
+                  "index": 0,
+                  "letter": "A",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "LetterModel@1.keys",
+                      "observers": Set {},
+                    },
+                    "name": "LetterModel@1",
+                    "target": [Circular],
+                    "values": Map {
+                      "letter" => "A",
+                      "classes" => Array [],
+                      "index" => 0,
+                    },
+                  },
+                },
+                LetterModel {
+                  "classes": Array [],
+                  "columns": 13,
+                  "index": 1,
+                  "letter": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "LetterModel@2.keys",
+                      "observers": Set {},
+                    },
+                    "name": "LetterModel@2",
+                    "target": [Circular],
+                    "values": Map {
+                      "letter" => "B",
+                      "classes" => Array [],
+                      "index" => 1,
+                    },
+                  },
+                },
+              ],
+              "hover": undefined,
+              "initial": undefined,
+              "isMouseDown": false,
+              "popChainClasses": [Function],
+              "win": false,
+              "words": Array [
+                "A",
+              ],
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "BoardModel@3.keys",
+                  "observers": Set {},
+                },
+                "name": "BoardModel@3",
+                "target": [Circular],
+                "values": Map {
+                  "grid" => Array [
+                    LetterModel {
+                      "classes": Array [],
+                      "columns": 13,
+                      "index": 0,
+                      "letter": "A",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "LetterModel@1.keys",
+                          "observers": Set {},
+                        },
+                        "name": "LetterModel@1",
+                        "target": [Circular],
+                        "values": Map {
+                          "letter" => "A",
+                          "classes" => Array [],
+                          "index" => 0,
+                        },
+                      },
+                    },
+                    LetterModel {
+                      "classes": Array [],
+                      "columns": 13,
+                      "index": 1,
+                      "letter": "B",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "LetterModel@2.keys",
+                          "observers": Set {},
+                        },
+                        "name": "LetterModel@2",
+                        "target": [Circular],
+                        "values": Map {
+                          "letter" => "B",
+                          "classes" => Array [],
+                          "index" => 1,
+                        },
+                      },
+                    },
+                  ],
+                  "words" => Array [
+                    "A",
+                  ],
+                  "chain" => Array [],
+                  "initial" => undefined,
+                  "hover" => undefined,
+                  "isMouseDown" => false,
+                  "win" => false,
+                },
+              },
+            }
+          }
+          letter={
+            LetterModel {
+              "classes": Array [],
+              "columns": 13,
+              "index": 0,
+              "letter": "A",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "LetterModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "LetterModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "letter" => "A",
+                  "classes" => Array [],
+                  "index" => 0,
+                },
+              },
+            }
+          }
+        />
+        <Square
+          board={
+            BoardModel {
+              "chain": Array [],
+              "columns": 13,
+              "grid": Array [
+                LetterModel {
+                  "classes": Array [],
+                  "columns": 13,
+                  "index": 0,
+                  "letter": "A",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "LetterModel@1.keys",
+                      "observers": Set {},
+                    },
+                    "name": "LetterModel@1",
+                    "target": [Circular],
+                    "values": Map {
+                      "letter" => "A",
+                      "classes" => Array [],
+                      "index" => 0,
+                    },
+                  },
+                },
+                LetterModel {
+                  "classes": Array [],
+                  "columns": 13,
+                  "index": 1,
+                  "letter": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "LetterModel@2.keys",
+                      "observers": Set {},
+                    },
+                    "name": "LetterModel@2",
+                    "target": [Circular],
+                    "values": Map {
+                      "letter" => "B",
+                      "classes" => Array [],
+                      "index" => 1,
+                    },
+                  },
+                },
+              ],
+              "hover": undefined,
+              "initial": undefined,
+              "isMouseDown": false,
+              "popChainClasses": [Function],
+              "win": false,
+              "words": Array [
+                "A",
+              ],
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "BoardModel@3.keys",
+                  "observers": Set {},
+                },
+                "name": "BoardModel@3",
+                "target": [Circular],
+                "values": Map {
+                  "grid" => Array [
+                    LetterModel {
+                      "classes": Array [],
+                      "columns": 13,
+                      "index": 0,
+                      "letter": "A",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "LetterModel@1.keys",
+                          "observers": Set {},
+                        },
+                        "name": "LetterModel@1",
+                        "target": [Circular],
+                        "values": Map {
+                          "letter" => "A",
+                          "classes" => Array [],
+                          "index" => 0,
+                        },
+                      },
+                    },
+                    LetterModel {
+                      "classes": Array [],
+                      "columns": 13,
+                      "index": 1,
+                      "letter": "B",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "LetterModel@2.keys",
+                          "observers": Set {},
+                        },
+                        "name": "LetterModel@2",
+                        "target": [Circular],
+                        "values": Map {
+                          "letter" => "B",
+                          "classes" => Array [],
+                          "index" => 1,
+                        },
+                      },
+                    },
+                  ],
+                  "words" => Array [
+                    "A",
+                  ],
+                  "chain" => Array [],
+                  "initial" => undefined,
+                  "hover" => undefined,
+                  "isMouseDown" => false,
+                  "win" => false,
+                },
+              },
+            }
+          }
+          letter={
+            LetterModel {
+              "classes": Array [],
+              "columns": 13,
+              "index": 1,
+              "letter": "B",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "LetterModel@2.keys",
+                  "observers": Set {},
+                },
+                "name": "LetterModel@2",
+                "target": [Circular],
+                "values": Map {
+                  "letter" => "B",
+                  "classes" => Array [],
+                  "index" => 1,
+                },
+              },
+            }
+          }
         />
       </div>,
-      "className": "container",
+      "className": "container ",
     },
     "ref": null,
     "rendered": Object {
@@ -43,12 +532,359 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Letter
-            char="A"
-            coords="NaN-NaN"
-            handleClick={[Function]}
-            handleMouseOver={[Function]}
-            handleMouseUp={[Function]}
+          <Square
+            board={
+              BoardModel {
+                "chain": Array [],
+                "columns": 13,
+                "grid": Array [
+                  LetterModel {
+                    "classes": Array [],
+                    "columns": 13,
+                    "index": 0,
+                    "letter": "A",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "LetterModel@1.keys",
+                        "observers": Set {},
+                      },
+                      "name": "LetterModel@1",
+                      "target": [Circular],
+                      "values": Map {
+                        "letter" => "A",
+                        "classes" => Array [],
+                        "index" => 0,
+                      },
+                    },
+                  },
+                  LetterModel {
+                    "classes": Array [],
+                    "columns": 13,
+                    "index": 1,
+                    "letter": "B",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "LetterModel@2.keys",
+                        "observers": Set {},
+                      },
+                      "name": "LetterModel@2",
+                      "target": [Circular],
+                      "values": Map {
+                        "letter" => "B",
+                        "classes" => Array [],
+                        "index" => 1,
+                      },
+                    },
+                  },
+                ],
+                "hover": undefined,
+                "initial": undefined,
+                "isMouseDown": false,
+                "popChainClasses": [Function],
+                "win": false,
+                "words": Array [
+                  "A",
+                ],
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "BoardModel@3.keys",
+                    "observers": Set {},
+                  },
+                  "name": "BoardModel@3",
+                  "target": [Circular],
+                  "values": Map {
+                    "grid" => Array [
+                      LetterModel {
+                        "classes": Array [],
+                        "columns": 13,
+                        "index": 0,
+                        "letter": "A",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "LetterModel@1.keys",
+                            "observers": Set {},
+                          },
+                          "name": "LetterModel@1",
+                          "target": [Circular],
+                          "values": Map {
+                            "letter" => "A",
+                            "classes" => Array [],
+                            "index" => 0,
+                          },
+                        },
+                      },
+                      LetterModel {
+                        "classes": Array [],
+                        "columns": 13,
+                        "index": 1,
+                        "letter": "B",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "LetterModel@2.keys",
+                            "observers": Set {},
+                          },
+                          "name": "LetterModel@2",
+                          "target": [Circular],
+                          "values": Map {
+                            "letter" => "B",
+                            "classes" => Array [],
+                            "index" => 1,
+                          },
+                        },
+                      },
+                    ],
+                    "words" => Array [
+                      "A",
+                    ],
+                    "chain" => Array [],
+                    "initial" => undefined,
+                    "hover" => undefined,
+                    "isMouseDown" => false,
+                    "win" => false,
+                  },
+                },
+              }
+            }
+            letter={
+              LetterModel {
+                "classes": Array [],
+                "columns": 13,
+                "index": 0,
+                "letter": "A",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "LetterModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "LetterModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "letter" => "A",
+                    "classes" => Array [],
+                    "index" => 0,
+                  },
+                },
+              }
+            }
+          />,
+          <Square
+            board={
+              BoardModel {
+                "chain": Array [],
+                "columns": 13,
+                "grid": Array [
+                  LetterModel {
+                    "classes": Array [],
+                    "columns": 13,
+                    "index": 0,
+                    "letter": "A",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "LetterModel@1.keys",
+                        "observers": Set {},
+                      },
+                      "name": "LetterModel@1",
+                      "target": [Circular],
+                      "values": Map {
+                        "letter" => "A",
+                        "classes" => Array [],
+                        "index" => 0,
+                      },
+                    },
+                  },
+                  LetterModel {
+                    "classes": Array [],
+                    "columns": 13,
+                    "index": 1,
+                    "letter": "B",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "LetterModel@2.keys",
+                        "observers": Set {},
+                      },
+                      "name": "LetterModel@2",
+                      "target": [Circular],
+                      "values": Map {
+                        "letter" => "B",
+                        "classes" => Array [],
+                        "index" => 1,
+                      },
+                    },
+                  },
+                ],
+                "hover": undefined,
+                "initial": undefined,
+                "isMouseDown": false,
+                "popChainClasses": [Function],
+                "win": false,
+                "words": Array [
+                  "A",
+                ],
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "BoardModel@3.keys",
+                    "observers": Set {},
+                  },
+                  "name": "BoardModel@3",
+                  "target": [Circular],
+                  "values": Map {
+                    "grid" => Array [
+                      LetterModel {
+                        "classes": Array [],
+                        "columns": 13,
+                        "index": 0,
+                        "letter": "A",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "LetterModel@1.keys",
+                            "observers": Set {},
+                          },
+                          "name": "LetterModel@1",
+                          "target": [Circular],
+                          "values": Map {
+                            "letter" => "A",
+                            "classes" => Array [],
+                            "index" => 0,
+                          },
+                        },
+                      },
+                      LetterModel {
+                        "classes": Array [],
+                        "columns": 13,
+                        "index": 1,
+                        "letter": "B",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "LetterModel@2.keys",
+                            "observers": Set {},
+                          },
+                          "name": "LetterModel@2",
+                          "target": [Circular],
+                          "values": Map {
+                            "letter" => "B",
+                            "classes" => Array [],
+                            "index" => 1,
+                          },
+                        },
+                      },
+                    ],
+                    "words" => Array [
+                      "A",
+                    ],
+                    "chain" => Array [],
+                    "initial" => undefined,
+                    "hover" => undefined,
+                    "isMouseDown" => false,
+                    "win" => false,
+                  },
+                },
+              }
+            }
+            letter={
+              LetterModel {
+                "classes": Array [],
+                "columns": 13,
+                "index": 1,
+                "letter": "B",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "LetterModel@2.keys",
+                    "observers": Set {},
+                  },
+                  "name": "LetterModel@2",
+                  "target": [Circular],
+                  "values": Map {
+                    "letter" => "B",
+                    "classes" => Array [],
+                    "index" => 1,
+                  },
+                },
+              }
+            }
           />,
         ],
         "className": "board_grid",
@@ -57,14 +893,361 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "NaN-NaN",
-          "nodeType": "function",
+          "key": "A0",
+          "nodeType": "class",
           "props": Object {
-            "char": "A",
-            "coords": "NaN-NaN",
-            "handleClick": [Function],
-            "handleMouseOver": [Function],
-            "handleMouseUp": [Function],
+            "board": BoardModel {
+              "chain": Array [],
+              "columns": 13,
+              "grid": Array [
+                LetterModel {
+                  "classes": Array [],
+                  "columns": 13,
+                  "index": 0,
+                  "letter": "A",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "LetterModel@1.keys",
+                      "observers": Set {},
+                    },
+                    "name": "LetterModel@1",
+                    "target": [Circular],
+                    "values": Map {
+                      "letter" => "A",
+                      "classes" => Array [],
+                      "index" => 0,
+                    },
+                  },
+                },
+                LetterModel {
+                  "classes": Array [],
+                  "columns": 13,
+                  "index": 1,
+                  "letter": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "LetterModel@2.keys",
+                      "observers": Set {},
+                    },
+                    "name": "LetterModel@2",
+                    "target": [Circular],
+                    "values": Map {
+                      "letter" => "B",
+                      "classes" => Array [],
+                      "index" => 1,
+                    },
+                  },
+                },
+              ],
+              "hover": undefined,
+              "initial": undefined,
+              "isMouseDown": false,
+              "popChainClasses": [Function],
+              "win": false,
+              "words": Array [
+                "A",
+              ],
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "BoardModel@3.keys",
+                  "observers": Set {},
+                },
+                "name": "BoardModel@3",
+                "target": [Circular],
+                "values": Map {
+                  "grid" => Array [
+                    LetterModel {
+                      "classes": Array [],
+                      "columns": 13,
+                      "index": 0,
+                      "letter": "A",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "LetterModel@1.keys",
+                          "observers": Set {},
+                        },
+                        "name": "LetterModel@1",
+                        "target": [Circular],
+                        "values": Map {
+                          "letter" => "A",
+                          "classes" => Array [],
+                          "index" => 0,
+                        },
+                      },
+                    },
+                    LetterModel {
+                      "classes": Array [],
+                      "columns": 13,
+                      "index": 1,
+                      "letter": "B",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "LetterModel@2.keys",
+                          "observers": Set {},
+                        },
+                        "name": "LetterModel@2",
+                        "target": [Circular],
+                        "values": Map {
+                          "letter" => "B",
+                          "classes" => Array [],
+                          "index" => 1,
+                        },
+                      },
+                    },
+                  ],
+                  "words" => Array [
+                    "A",
+                  ],
+                  "chain" => Array [],
+                  "initial" => undefined,
+                  "hover" => undefined,
+                  "isMouseDown" => false,
+                  "win" => false,
+                },
+              },
+            },
+            "letter": LetterModel {
+              "classes": Array [],
+              "columns": 13,
+              "index": 0,
+              "letter": "A",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "LetterModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "LetterModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "letter" => "A",
+                  "classes" => Array [],
+                  "index" => 0,
+                },
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "B1",
+          "nodeType": "class",
+          "props": Object {
+            "board": BoardModel {
+              "chain": Array [],
+              "columns": 13,
+              "grid": Array [
+                LetterModel {
+                  "classes": Array [],
+                  "columns": 13,
+                  "index": 0,
+                  "letter": "A",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "LetterModel@1.keys",
+                      "observers": Set {},
+                    },
+                    "name": "LetterModel@1",
+                    "target": [Circular],
+                    "values": Map {
+                      "letter" => "A",
+                      "classes" => Array [],
+                      "index" => 0,
+                    },
+                  },
+                },
+                LetterModel {
+                  "classes": Array [],
+                  "columns": 13,
+                  "index": 1,
+                  "letter": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "LetterModel@2.keys",
+                      "observers": Set {},
+                    },
+                    "name": "LetterModel@2",
+                    "target": [Circular],
+                    "values": Map {
+                      "letter" => "B",
+                      "classes" => Array [],
+                      "index" => 1,
+                    },
+                  },
+                },
+              ],
+              "hover": undefined,
+              "initial": undefined,
+              "isMouseDown": false,
+              "popChainClasses": [Function],
+              "win": false,
+              "words": Array [
+                "A",
+              ],
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "BoardModel@3.keys",
+                  "observers": Set {},
+                },
+                "name": "BoardModel@3",
+                "target": [Circular],
+                "values": Map {
+                  "grid" => Array [
+                    LetterModel {
+                      "classes": Array [],
+                      "columns": 13,
+                      "index": 0,
+                      "letter": "A",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "LetterModel@1.keys",
+                          "observers": Set {},
+                        },
+                        "name": "LetterModel@1",
+                        "target": [Circular],
+                        "values": Map {
+                          "letter" => "A",
+                          "classes" => Array [],
+                          "index" => 0,
+                        },
+                      },
+                    },
+                    LetterModel {
+                      "classes": Array [],
+                      "columns": 13,
+                      "index": 1,
+                      "letter": "B",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "LetterModel@2.keys",
+                          "observers": Set {},
+                        },
+                        "name": "LetterModel@2",
+                        "target": [Circular],
+                        "values": Map {
+                          "letter" => "B",
+                          "classes" => Array [],
+                          "index" => 1,
+                        },
+                      },
+                    },
+                  ],
+                  "words" => Array [
+                    "A",
+                  ],
+                  "chain" => Array [],
+                  "initial" => undefined,
+                  "hover" => undefined,
+                  "isMouseDown" => false,
+                  "win" => false,
+                },
+              },
+            },
+            "letter": LetterModel {
+              "classes": Array [],
+              "columns": 13,
+              "index": 1,
+              "letter": "B",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "LetterModel@2.keys",
+                  "observers": Set {},
+                },
+                "name": "LetterModel@2",
+                "target": [Circular],
+                "values": Map {
+                  "letter" => "B",
+                  "classes" => Array [],
+                  "index" => 1,
+                },
+              },
+            },
           },
           "ref": null,
           "rendered": null,
@@ -84,15 +1267,362 @@ ShallowWrapper {
         "children": <div
           className="board_grid"
         >
-          <Letter
-            char="A"
-            coords="NaN-NaN"
-            handleClick={[Function]}
-            handleMouseOver={[Function]}
-            handleMouseUp={[Function]}
+          <Square
+            board={
+              BoardModel {
+                "chain": Array [],
+                "columns": 13,
+                "grid": Array [
+                  LetterModel {
+                    "classes": Array [],
+                    "columns": 13,
+                    "index": 0,
+                    "letter": "A",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "LetterModel@1.keys",
+                        "observers": Set {},
+                      },
+                      "name": "LetterModel@1",
+                      "target": [Circular],
+                      "values": Map {
+                        "letter" => "A",
+                        "classes" => Array [],
+                        "index" => 0,
+                      },
+                    },
+                  },
+                  LetterModel {
+                    "classes": Array [],
+                    "columns": 13,
+                    "index": 1,
+                    "letter": "B",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "LetterModel@2.keys",
+                        "observers": Set {},
+                      },
+                      "name": "LetterModel@2",
+                      "target": [Circular],
+                      "values": Map {
+                        "letter" => "B",
+                        "classes" => Array [],
+                        "index" => 1,
+                      },
+                    },
+                  },
+                ],
+                "hover": undefined,
+                "initial": undefined,
+                "isMouseDown": false,
+                "popChainClasses": [Function],
+                "win": false,
+                "words": Array [
+                  "A",
+                ],
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "BoardModel@3.keys",
+                    "observers": Set {},
+                  },
+                  "name": "BoardModel@3",
+                  "target": [Circular],
+                  "values": Map {
+                    "grid" => Array [
+                      LetterModel {
+                        "classes": Array [],
+                        "columns": 13,
+                        "index": 0,
+                        "letter": "A",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "LetterModel@1.keys",
+                            "observers": Set {},
+                          },
+                          "name": "LetterModel@1",
+                          "target": [Circular],
+                          "values": Map {
+                            "letter" => "A",
+                            "classes" => Array [],
+                            "index" => 0,
+                          },
+                        },
+                      },
+                      LetterModel {
+                        "classes": Array [],
+                        "columns": 13,
+                        "index": 1,
+                        "letter": "B",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "LetterModel@2.keys",
+                            "observers": Set {},
+                          },
+                          "name": "LetterModel@2",
+                          "target": [Circular],
+                          "values": Map {
+                            "letter" => "B",
+                            "classes" => Array [],
+                            "index" => 1,
+                          },
+                        },
+                      },
+                    ],
+                    "words" => Array [
+                      "A",
+                    ],
+                    "chain" => Array [],
+                    "initial" => undefined,
+                    "hover" => undefined,
+                    "isMouseDown" => false,
+                    "win" => false,
+                  },
+                },
+              }
+            }
+            letter={
+              LetterModel {
+                "classes": Array [],
+                "columns": 13,
+                "index": 0,
+                "letter": "A",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "LetterModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "LetterModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "letter" => "A",
+                    "classes" => Array [],
+                    "index" => 0,
+                  },
+                },
+              }
+            }
+          />
+          <Square
+            board={
+              BoardModel {
+                "chain": Array [],
+                "columns": 13,
+                "grid": Array [
+                  LetterModel {
+                    "classes": Array [],
+                    "columns": 13,
+                    "index": 0,
+                    "letter": "A",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "LetterModel@1.keys",
+                        "observers": Set {},
+                      },
+                      "name": "LetterModel@1",
+                      "target": [Circular],
+                      "values": Map {
+                        "letter" => "A",
+                        "classes" => Array [],
+                        "index" => 0,
+                      },
+                    },
+                  },
+                  LetterModel {
+                    "classes": Array [],
+                    "columns": 13,
+                    "index": 1,
+                    "letter": "B",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "LetterModel@2.keys",
+                        "observers": Set {},
+                      },
+                      "name": "LetterModel@2",
+                      "target": [Circular],
+                      "values": Map {
+                        "letter" => "B",
+                        "classes" => Array [],
+                        "index" => 1,
+                      },
+                    },
+                  },
+                ],
+                "hover": undefined,
+                "initial": undefined,
+                "isMouseDown": false,
+                "popChainClasses": [Function],
+                "win": false,
+                "words": Array [
+                  "A",
+                ],
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "BoardModel@3.keys",
+                    "observers": Set {},
+                  },
+                  "name": "BoardModel@3",
+                  "target": [Circular],
+                  "values": Map {
+                    "grid" => Array [
+                      LetterModel {
+                        "classes": Array [],
+                        "columns": 13,
+                        "index": 0,
+                        "letter": "A",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "LetterModel@1.keys",
+                            "observers": Set {},
+                          },
+                          "name": "LetterModel@1",
+                          "target": [Circular],
+                          "values": Map {
+                            "letter" => "A",
+                            "classes" => Array [],
+                            "index" => 0,
+                          },
+                        },
+                      },
+                      LetterModel {
+                        "classes": Array [],
+                        "columns": 13,
+                        "index": 1,
+                        "letter": "B",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "LetterModel@2.keys",
+                            "observers": Set {},
+                          },
+                          "name": "LetterModel@2",
+                          "target": [Circular],
+                          "values": Map {
+                            "letter" => "B",
+                            "classes" => Array [],
+                            "index" => 1,
+                          },
+                        },
+                      },
+                    ],
+                    "words" => Array [
+                      "A",
+                    ],
+                    "chain" => Array [],
+                    "initial" => undefined,
+                    "hover" => undefined,
+                    "isMouseDown" => false,
+                    "win" => false,
+                  },
+                },
+              }
+            }
+            letter={
+              LetterModel {
+                "classes": Array [],
+                "columns": 13,
+                "index": 1,
+                "letter": "B",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "LetterModel@2.keys",
+                    "observers": Set {},
+                  },
+                  "name": "LetterModel@2",
+                  "target": [Circular],
+                  "values": Map {
+                    "letter" => "B",
+                    "classes" => Array [],
+                    "index" => 1,
+                  },
+                },
+              }
+            }
           />
         </div>,
-        "className": "container",
+        "className": "container ",
       },
       "ref": null,
       "rendered": Object {
@@ -101,12 +1631,359 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Letter
-              char="A"
-              coords="NaN-NaN"
-              handleClick={[Function]}
-              handleMouseOver={[Function]}
-              handleMouseUp={[Function]}
+            <Square
+              board={
+                BoardModel {
+                  "chain": Array [],
+                  "columns": 13,
+                  "grid": Array [
+                    LetterModel {
+                      "classes": Array [],
+                      "columns": 13,
+                      "index": 0,
+                      "letter": "A",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "LetterModel@1.keys",
+                          "observers": Set {},
+                        },
+                        "name": "LetterModel@1",
+                        "target": [Circular],
+                        "values": Map {
+                          "letter" => "A",
+                          "classes" => Array [],
+                          "index" => 0,
+                        },
+                      },
+                    },
+                    LetterModel {
+                      "classes": Array [],
+                      "columns": 13,
+                      "index": 1,
+                      "letter": "B",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "LetterModel@2.keys",
+                          "observers": Set {},
+                        },
+                        "name": "LetterModel@2",
+                        "target": [Circular],
+                        "values": Map {
+                          "letter" => "B",
+                          "classes" => Array [],
+                          "index" => 1,
+                        },
+                      },
+                    },
+                  ],
+                  "hover": undefined,
+                  "initial": undefined,
+                  "isMouseDown": false,
+                  "popChainClasses": [Function],
+                  "win": false,
+                  "words": Array [
+                    "A",
+                  ],
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "BoardModel@3.keys",
+                      "observers": Set {},
+                    },
+                    "name": "BoardModel@3",
+                    "target": [Circular],
+                    "values": Map {
+                      "grid" => Array [
+                        LetterModel {
+                          "classes": Array [],
+                          "columns": 13,
+                          "index": 0,
+                          "letter": "A",
+                          Symbol(mobx did run lazy initializers): true,
+                          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                            "defaultEnhancer": [Function],
+                            "keysAtom": Atom$$1 {
+                              "diffValue": 0,
+                              "isBeingObserved": false,
+                              "isPendingUnobservation": false,
+                              "lastAccessedBy": 0,
+                              "lowestObserverState": 2,
+                              "name": "LetterModel@1.keys",
+                              "observers": Set {},
+                            },
+                            "name": "LetterModel@1",
+                            "target": [Circular],
+                            "values": Map {
+                              "letter" => "A",
+                              "classes" => Array [],
+                              "index" => 0,
+                            },
+                          },
+                        },
+                        LetterModel {
+                          "classes": Array [],
+                          "columns": 13,
+                          "index": 1,
+                          "letter": "B",
+                          Symbol(mobx did run lazy initializers): true,
+                          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                            "defaultEnhancer": [Function],
+                            "keysAtom": Atom$$1 {
+                              "diffValue": 0,
+                              "isBeingObserved": false,
+                              "isPendingUnobservation": false,
+                              "lastAccessedBy": 0,
+                              "lowestObserverState": 2,
+                              "name": "LetterModel@2.keys",
+                              "observers": Set {},
+                            },
+                            "name": "LetterModel@2",
+                            "target": [Circular],
+                            "values": Map {
+                              "letter" => "B",
+                              "classes" => Array [],
+                              "index" => 1,
+                            },
+                          },
+                        },
+                      ],
+                      "words" => Array [
+                        "A",
+                      ],
+                      "chain" => Array [],
+                      "initial" => undefined,
+                      "hover" => undefined,
+                      "isMouseDown" => false,
+                      "win" => false,
+                    },
+                  },
+                }
+              }
+              letter={
+                LetterModel {
+                  "classes": Array [],
+                  "columns": 13,
+                  "index": 0,
+                  "letter": "A",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "LetterModel@1.keys",
+                      "observers": Set {},
+                    },
+                    "name": "LetterModel@1",
+                    "target": [Circular],
+                    "values": Map {
+                      "letter" => "A",
+                      "classes" => Array [],
+                      "index" => 0,
+                    },
+                  },
+                }
+              }
+            />,
+            <Square
+              board={
+                BoardModel {
+                  "chain": Array [],
+                  "columns": 13,
+                  "grid": Array [
+                    LetterModel {
+                      "classes": Array [],
+                      "columns": 13,
+                      "index": 0,
+                      "letter": "A",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "LetterModel@1.keys",
+                          "observers": Set {},
+                        },
+                        "name": "LetterModel@1",
+                        "target": [Circular],
+                        "values": Map {
+                          "letter" => "A",
+                          "classes" => Array [],
+                          "index" => 0,
+                        },
+                      },
+                    },
+                    LetterModel {
+                      "classes": Array [],
+                      "columns": 13,
+                      "index": 1,
+                      "letter": "B",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "LetterModel@2.keys",
+                          "observers": Set {},
+                        },
+                        "name": "LetterModel@2",
+                        "target": [Circular],
+                        "values": Map {
+                          "letter" => "B",
+                          "classes" => Array [],
+                          "index" => 1,
+                        },
+                      },
+                    },
+                  ],
+                  "hover": undefined,
+                  "initial": undefined,
+                  "isMouseDown": false,
+                  "popChainClasses": [Function],
+                  "win": false,
+                  "words": Array [
+                    "A",
+                  ],
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "BoardModel@3.keys",
+                      "observers": Set {},
+                    },
+                    "name": "BoardModel@3",
+                    "target": [Circular],
+                    "values": Map {
+                      "grid" => Array [
+                        LetterModel {
+                          "classes": Array [],
+                          "columns": 13,
+                          "index": 0,
+                          "letter": "A",
+                          Symbol(mobx did run lazy initializers): true,
+                          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                            "defaultEnhancer": [Function],
+                            "keysAtom": Atom$$1 {
+                              "diffValue": 0,
+                              "isBeingObserved": false,
+                              "isPendingUnobservation": false,
+                              "lastAccessedBy": 0,
+                              "lowestObserverState": 2,
+                              "name": "LetterModel@1.keys",
+                              "observers": Set {},
+                            },
+                            "name": "LetterModel@1",
+                            "target": [Circular],
+                            "values": Map {
+                              "letter" => "A",
+                              "classes" => Array [],
+                              "index" => 0,
+                            },
+                          },
+                        },
+                        LetterModel {
+                          "classes": Array [],
+                          "columns": 13,
+                          "index": 1,
+                          "letter": "B",
+                          Symbol(mobx did run lazy initializers): true,
+                          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                            "defaultEnhancer": [Function],
+                            "keysAtom": Atom$$1 {
+                              "diffValue": 0,
+                              "isBeingObserved": false,
+                              "isPendingUnobservation": false,
+                              "lastAccessedBy": 0,
+                              "lowestObserverState": 2,
+                              "name": "LetterModel@2.keys",
+                              "observers": Set {},
+                            },
+                            "name": "LetterModel@2",
+                            "target": [Circular],
+                            "values": Map {
+                              "letter" => "B",
+                              "classes" => Array [],
+                              "index" => 1,
+                            },
+                          },
+                        },
+                      ],
+                      "words" => Array [
+                        "A",
+                      ],
+                      "chain" => Array [],
+                      "initial" => undefined,
+                      "hover" => undefined,
+                      "isMouseDown" => false,
+                      "win" => false,
+                    },
+                  },
+                }
+              }
+              letter={
+                LetterModel {
+                  "classes": Array [],
+                  "columns": 13,
+                  "index": 1,
+                  "letter": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "LetterModel@2.keys",
+                      "observers": Set {},
+                    },
+                    "name": "LetterModel@2",
+                    "target": [Circular],
+                    "values": Map {
+                      "letter" => "B",
+                      "classes" => Array [],
+                      "index" => 1,
+                    },
+                  },
+                }
+              }
             />,
           ],
           "className": "board_grid",
@@ -115,14 +1992,361 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": "NaN-NaN",
-            "nodeType": "function",
+            "key": "A0",
+            "nodeType": "class",
             "props": Object {
-              "char": "A",
-              "coords": "NaN-NaN",
-              "handleClick": [Function],
-              "handleMouseOver": [Function],
-              "handleMouseUp": [Function],
+              "board": BoardModel {
+                "chain": Array [],
+                "columns": 13,
+                "grid": Array [
+                  LetterModel {
+                    "classes": Array [],
+                    "columns": 13,
+                    "index": 0,
+                    "letter": "A",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "LetterModel@1.keys",
+                        "observers": Set {},
+                      },
+                      "name": "LetterModel@1",
+                      "target": [Circular],
+                      "values": Map {
+                        "letter" => "A",
+                        "classes" => Array [],
+                        "index" => 0,
+                      },
+                    },
+                  },
+                  LetterModel {
+                    "classes": Array [],
+                    "columns": 13,
+                    "index": 1,
+                    "letter": "B",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "LetterModel@2.keys",
+                        "observers": Set {},
+                      },
+                      "name": "LetterModel@2",
+                      "target": [Circular],
+                      "values": Map {
+                        "letter" => "B",
+                        "classes" => Array [],
+                        "index" => 1,
+                      },
+                    },
+                  },
+                ],
+                "hover": undefined,
+                "initial": undefined,
+                "isMouseDown": false,
+                "popChainClasses": [Function],
+                "win": false,
+                "words": Array [
+                  "A",
+                ],
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "BoardModel@3.keys",
+                    "observers": Set {},
+                  },
+                  "name": "BoardModel@3",
+                  "target": [Circular],
+                  "values": Map {
+                    "grid" => Array [
+                      LetterModel {
+                        "classes": Array [],
+                        "columns": 13,
+                        "index": 0,
+                        "letter": "A",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "LetterModel@1.keys",
+                            "observers": Set {},
+                          },
+                          "name": "LetterModel@1",
+                          "target": [Circular],
+                          "values": Map {
+                            "letter" => "A",
+                            "classes" => Array [],
+                            "index" => 0,
+                          },
+                        },
+                      },
+                      LetterModel {
+                        "classes": Array [],
+                        "columns": 13,
+                        "index": 1,
+                        "letter": "B",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "LetterModel@2.keys",
+                            "observers": Set {},
+                          },
+                          "name": "LetterModel@2",
+                          "target": [Circular],
+                          "values": Map {
+                            "letter" => "B",
+                            "classes" => Array [],
+                            "index" => 1,
+                          },
+                        },
+                      },
+                    ],
+                    "words" => Array [
+                      "A",
+                    ],
+                    "chain" => Array [],
+                    "initial" => undefined,
+                    "hover" => undefined,
+                    "isMouseDown" => false,
+                    "win" => false,
+                  },
+                },
+              },
+              "letter": LetterModel {
+                "classes": Array [],
+                "columns": 13,
+                "index": 0,
+                "letter": "A",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "LetterModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "LetterModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "letter" => "A",
+                    "classes" => Array [],
+                    "index" => 0,
+                  },
+                },
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "B1",
+            "nodeType": "class",
+            "props": Object {
+              "board": BoardModel {
+                "chain": Array [],
+                "columns": 13,
+                "grid": Array [
+                  LetterModel {
+                    "classes": Array [],
+                    "columns": 13,
+                    "index": 0,
+                    "letter": "A",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "LetterModel@1.keys",
+                        "observers": Set {},
+                      },
+                      "name": "LetterModel@1",
+                      "target": [Circular],
+                      "values": Map {
+                        "letter" => "A",
+                        "classes" => Array [],
+                        "index" => 0,
+                      },
+                    },
+                  },
+                  LetterModel {
+                    "classes": Array [],
+                    "columns": 13,
+                    "index": 1,
+                    "letter": "B",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "LetterModel@2.keys",
+                        "observers": Set {},
+                      },
+                      "name": "LetterModel@2",
+                      "target": [Circular],
+                      "values": Map {
+                        "letter" => "B",
+                        "classes" => Array [],
+                        "index" => 1,
+                      },
+                    },
+                  },
+                ],
+                "hover": undefined,
+                "initial": undefined,
+                "isMouseDown": false,
+                "popChainClasses": [Function],
+                "win": false,
+                "words": Array [
+                  "A",
+                ],
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "BoardModel@3.keys",
+                    "observers": Set {},
+                  },
+                  "name": "BoardModel@3",
+                  "target": [Circular],
+                  "values": Map {
+                    "grid" => Array [
+                      LetterModel {
+                        "classes": Array [],
+                        "columns": 13,
+                        "index": 0,
+                        "letter": "A",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "LetterModel@1.keys",
+                            "observers": Set {},
+                          },
+                          "name": "LetterModel@1",
+                          "target": [Circular],
+                          "values": Map {
+                            "letter" => "A",
+                            "classes" => Array [],
+                            "index" => 0,
+                          },
+                        },
+                      },
+                      LetterModel {
+                        "classes": Array [],
+                        "columns": 13,
+                        "index": 1,
+                        "letter": "B",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "LetterModel@2.keys",
+                            "observers": Set {},
+                          },
+                          "name": "LetterModel@2",
+                          "target": [Circular],
+                          "values": Map {
+                            "letter" => "B",
+                            "classes" => Array [],
+                            "index" => 1,
+                          },
+                        },
+                      },
+                    ],
+                    "words" => Array [
+                      "A",
+                    ],
+                    "chain" => Array [],
+                    "initial" => undefined,
+                    "hover" => undefined,
+                    "isMouseDown" => false,
+                    "win" => false,
+                  },
+                },
+              },
+              "letter": LetterModel {
+                "classes": Array [],
+                "columns": 13,
+                "index": 1,
+                "letter": "B",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "LetterModel@2.keys",
+                    "observers": Set {},
+                  },
+                  "name": "LetterModel@2",
+                  "target": [Circular],
+                  "values": Map {
+                    "letter" => "B",
+                    "classes" => Array [],
+                    "index" => 1,
+                  },
+                },
+              },
             },
             "ref": null,
             "rendered": null,
