@@ -6,4 +6,6 @@ Enzyme.configure({
   adapter: new Adapter()
 });
 
-DotEnv.config();
+DotEnv.config({ 
+  path: ".env.test"
+});

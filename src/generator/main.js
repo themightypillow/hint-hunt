@@ -26,7 +26,7 @@ function readFile(filename) {
   }, {});
   let puzzle = new WordSearchGenerator(words, 14, 13); // all grids are 14x13 by default
   puzzle.create();
-  return { puzzle, clues, words, title };
+  return { puzzle, clues, title };
 }
 
 /*
@@ -35,11 +35,10 @@ function readFile(filename) {
   title - title as string
   database - imported firebase database
 */
-function addToDatabase(date, puzzle, clues, words, title, database) {
+function addToDatabase(date, puzzle, clues, title, database) {
   return database.ref(date).set({
     title,
     clues,
-    words,
     grid: puzzle.grid,
     rows: puzzle.rows,
     columns: puzzle.columns
@@ -48,7 +47,7 @@ function addToDatabase(date, puzzle, clues, words, title, database) {
 
 if(process.argv[2]) {
   let info = readFile(process.argv[3]);
-  addToDatabase(process.argv[2], info.puzzle, info.clues, info.words, info.title, firebaseDatabase)
+  addToDatabase(process.argv[2], info.puzzle, info.clues, info.title, firebaseDatabase)
     .then(() => {
       console.log("Data saved successfully");
       process.exit();

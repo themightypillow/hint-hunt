@@ -59,7 +59,7 @@ test("should succeed in placing a word in an area where the word is partially fi
 });
 
 describe("creating grid containing CAT", () => {
-  let puzzle = new WordSearchGenerator(["CAT"], 5, 5);
+  let puzzle = new WordSearchGenerator(["CAT"], 4, 4);
   puzzle.generate();
 
   test("should contain C", () => {
