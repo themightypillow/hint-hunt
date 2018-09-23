@@ -1,5 +1,4 @@
 import { configure, observable, action } from "mobx";
-import moment from "moment";
 import database from "../firebase/firebase";
 import ModalModel from "./ModalModel";
 import WordModel from "./WordModel";
@@ -19,19 +18,26 @@ class HintHuntModel {
   @action fetchPuzzle = (date) => {
     this.modal.visible = true;
     this.modal.loading = true;
-    this.modal.button = false;
-    return database.ref(date).once("value");
+    this.modal.date = date;
+    const dateString = date.toLocaleDateString("en-US").replace(/\//g, "-");
+    return database.ref(dateString).once("value");
   }
 
   @action setPuzzle = (snapshot) => {
-    const data = snapshot.val();
-    this.modal.text = `${moment(snapshot.key).format("MMM DD, YYYY")} - ${data.title}`;
-    this.modal.button = true;
-    this.modal.buttonText = "Play Now";
-    this.clues = this.setClues(data.clues);
-    this.board = new BoardModel(data.grid, this.words);
-    this.title = data.title;
-    this.showWin = false;
+    this.modal.date = new Date(snapshot.key.replace(/-/g, "/"));
+    if(snapshot.exists()) {
+      const data = snapshot.val();
+      this.modal.setHeading(data.title);
+      this.modal.buttonDisabled = false;
+      this.clues = this.setClues(data.clues);
+      this.board = new BoardModel(data.grid, this.words);
+      this.title = data.title;
+      this.showWin = false;
+    }
+    else {
+      this.modal.setHeading("No Puzzle");
+      this.modal.buttonDisabled = true;
+    }
   }
 
   @action setClues = (clues) => {
@@ -47,10 +53,6 @@ class HintHuntModel {
 
   @action checkWin = () => {
     if(this.board.win) {
-      this.modal.visible = true;
-      this.modal.text = "You Win!";
-      this.modal.button = true;
-      this.modal.buttonText = "Close";
       this.showWin = true;
     }
   }

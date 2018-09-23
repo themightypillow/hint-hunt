@@ -46,17 +46,23 @@ function addToDatabase(date, puzzle, clues, title, database) {
 }
 
 if(process.argv[2]) {
-  let info = readFile(process.argv[3]);
-  addToDatabase(process.argv[2], info.puzzle, info.clues, info.title, firebaseDatabase)
-    .then(() => {
-      console.log("Data saved successfully");
-      process.exit();
-    }).catch((e) => {
-      console.log(
-        `Failed to write to database
-        ${e}`);
-        process.exit(0);
-    });
+  if(process.argv[2] === "help") {
+    console.log("Usage: npm run generate MM/DD/YYYY filename");
+    process.exit();
+  }
+  else {
+    let info = readFile(process.argv[3]);
+    addToDatabase(process.argv[2], info.puzzle, info.clues, info.title, firebaseDatabase)
+      .then(() => {
+        console.log("Data saved successfully");
+        process.exit();
+      }).catch((e) => {
+        console.log(
+          `Failed to write to database
+          ${e}`);
+          process.exit(0);
+      });
+  }
 }
 
 module.exports = {

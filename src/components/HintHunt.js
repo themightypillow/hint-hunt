@@ -18,7 +18,7 @@ class HintHunt extends React.Component {
     return (      
       <div className="hinthunt" onMouseUp={this.handleMouseUp}>
         {
-          store.modal.visible && <Modal modal={store.modal}/>
+          store.modal.visible && <Modal store={store}/>
         }
         <h1 className="hinthunt_header">{store.title}</h1>
         <div className="hinthunt_main">

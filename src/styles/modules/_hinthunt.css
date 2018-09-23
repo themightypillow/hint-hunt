@@ -1,5 +1,6 @@
 .hinthunt {
-  margin: 0 2rem;
+  margin: 2rem 2rem 0 2rem;
+  position: fixed;
 
   &_icon {
     position: fixed;
@@ -47,6 +48,7 @@
 
   &_header {
     text-align: center;
+    margin-top: 0;
 
     @mixin atSmall {
       letter-spacing: 0.5rem;
