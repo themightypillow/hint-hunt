@@ -3,7 +3,7 @@ import { observer } from "mobx-react";
 import Clue from "./Clue";
 
 @observer
-class SideInfo extends React.Component {
+class Clues extends React.Component {
   render() {
     const store = this.props.store;
     return (
@@ -17,4 +17,4 @@ class SideInfo extends React.Component {
   }
 }
 
-export default SideInfo;
+export default Clues;

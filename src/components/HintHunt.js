@@ -1,9 +1,8 @@
 import React from "react";
 import { observer } from "mobx-react";
 import Modal from "./Modal";
-import SideInfo from "./SideInfo";
+import ClueList from "./ClueList";
 import Board from "./Board";
-import Loader from "./Loader";
 
 @observer
 class HintHunt extends React.Component {
@@ -27,24 +26,22 @@ class HintHunt extends React.Component {
         }
         <div className="hinthunt_animate">
           {
-            store.showWin ?
-            <h1 className="hinthunt-center">You Win!</h1> :
-            <div className="hinthunt-center"><Loader /></div>
+            store.showWin &&
+            <h1>You Win!</h1>
           }
         </div>
-        <h1 className="hinthunt_header">{store.title}</h1>
-        <div className="hinthunt_main">
-          <div className="hinthunt_icon"></div>
-          <div className="hinthunt_sideinfo">
-            <SideInfo store={store} />
+        <h1 className="hinthunt_title">{store.title}</h1>
+        <div className="hinthunt_game">
+          <div className="hinthunt_side">
+            <ClueList store={store} />
             <div>
-              <button onClick={store.toggleAnswers}>Show Words</button>
+              <button onClick={store.toggleAnswers} className="hinthunt_btn">
+                {store.showAnswers ? "Hide Words" : "Show Words"}
+              </button>
               <button onClick={this.handleClick} className="hinthunt_btn">Select Hunt</button>
             </div>
           </div>
-          <div className="hinthunt_board">
-            <Board board={store.board} />
-          </div>
+          <Board board={store.board} />
         </div>
       </div>
     );

@@ -32,9 +32,8 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    box-sizing: border-box;
-    border: 2px solid $red;
     border-radius: 20px;
+    z-index: -1;
 
     @mixin atSmall {
       height: 60%;
@@ -43,199 +42,94 @@
     }
   }
 
-  &_left {
+  &_horizontal {
     content: "";
+    position: absolute;
     height: 75%;
     width: 100%;
-    left: 0;
-    position: absolute;
-    border-left: 2px solid $red;
-    border-top: 2px solid $red;
-    border-bottom: 2px solid $red;
-    border-radius: 20px 0 0 20px;
-    box-sizing: border-box;
+    z-index: -1;
 
     @mixin atSmall {
       height: 50%;
     }
   }
 
-  &_leftRight {
+  &_vertical {
     content: "";
-    height: 75%;
-    width: 100%;
-    left: 0;
     position: absolute;
-    border-top: 2px solid $red;
-    border-bottom: 2px solid $red;
-    box-sizing: border-box;
-
-    @mixin atSmall {
-      height: 50%;
-    }
-  }
-
-  &_right {
-    content: "";
-    height: 75%;
-    width: 100%;
-    position: absolute;
-    box-sizing: border-box;
-    border-right: 2px solid $red;
-    border-top: 2px solid $red;
-    border-bottom: 2px solid $red;
-    border-radius: 0 20px 20px 0;
-    box-sizing: border-box;
-
-    @mixin atSmall {
-      height: 50%;
-    }
-  }
-
-  &_top {
-    content: "";
     height: 100%;
     width: 75%;
-    position: absolute;
-    box-sizing: border-box;
-    border-left: 2px solid $red;
-    border-top: 2px solid $red;
-    border-right: 2px solid $red;
-    border-radius: 20px 20px 0 0;
+    z-index: -1;
 
     @mixin atSmall {
       width: 50%;
-    }
-  }
-
-  &_topBottom {
-    content: "";
-    height: 100%;
-    width: 75%;
-    position: absolute;
-    box-sizing: border-box;
-    border-left: 2px solid $red;
-    border-right: 2px solid $red;
-
-    @mixin atSmall {
-      width: 50%;
-    }
-  }
-
-  &_bottom {
-    content: "";
-    height: 100%;
-    width: 75%;
-    position: absolute;
-    box-sizing: border-box;
-    border-left: 2px solid $red;
-    border-bottom: 2px solid $red;
-    border-right: 2px solid $red;
-    border-radius: 0 0 20px 20px;
-
-    @mixin atSmall {
-      width: 50%;
-    }
-  }
-
-  &_topLeft {
-    content: "";
-    height: 75%;
-    width: 142%;
-    position: absolute;
-    border-left: 2px solid $red;
-    border-top: 2px solid $red;
-    border-bottom: 2px solid $red;
-    border-radius: 20px 0 0 20px;
-    box-sizing: border-box;
-    transform: rotate(45deg);
-
-    @mixin atSmall {
-      height: 50%;
     }
   }
 
   &_backSlash {
     content: "";
-    height: 75%;
-    width: 142%;
     position: absolute;
-    box-sizing: border-box;
-    border-top: 2px solid $red;
-    border-bottom: 2px solid $red;
-    box-sizing: border-box;
+    height: 75%;
+    width: 143%;
     transform: rotate(45deg);
+    z-index: -1;
 
     @mixin atSmall {
       height: 50%;
-    }
-  }
-
-  &_bottomRight {
-    content: "";
-    height: 75%;
-    width: 142%;
-    position: absolute;
-    box-sizing: border-box;
-    border-right: 2px solid $red;
-    border-top: 2px solid $red;
-    border-bottom: 2px solid $red;
-    border-radius: 0 20px 20px 0;
-    box-sizing: border-box;
-    transform: rotate(45deg);
-
-    @mixin atSmall {
-      height: 50%;
-    }
-  }
-
-  &_topRight {
-    content: "";
-    height: 142%;
-    width: 75%;
-    position: absolute;
-    box-sizing: border-box;
-    border-left: 2px solid $red;
-    border-top: 2px solid $red;
-    border-right: 2px solid $red;
-    border-radius: 20px 20px 0 0;
-    transform: rotate(45deg);
-
-    @mixin atSmall {
-      width: 50%;
     }
   }
 
   &_forwardSlash {
     content: "";
-    height: 142%;
-    width: 75%;
     position: absolute;
-    box-sizing: border-box;
-    border-left: 2px solid $red;
-    border-right: 2px solid $red;
+    height: 143%;
+    width: 75%;
     transform: rotate(45deg);
+    z-index: -1;
 
     @mixin atSmall {
       width: 50%;
     }
   }
 
-  &_bottomLeft {
-    content: "";
-    height: 142%;
-    width: 75%;
-    position: absolute;
-    box-sizing: border-box;
-    border-left: 2px solid $red;
-    border-bottom: 2px solid $red;
-    border-right: 2px solid $red;
-    border-radius: 0 0 20px 20px;
-    transform: rotate(45deg);
+  &-blue {
+    background: $blue;
+  }
 
-    @mixin atSmall {
-      width: 50%;
-    }
+  &-yellow {
+    background: $yellow;
+  }
+
+  &-green {
+    background: $green;
+  }
+
+  &-orange {
+    background: $orange;
+  }
+
+  &-red {
+    background: $red;
+  }
+
+  &-pink {
+    background: $pink;
+  }
+
+  &-purple {
+    background: $purple;
+  }
+
+  &-rose {
+    background: $rose;
+  }
+
+  &-steel {
+    background: $steel;
+  }
+
+  &-sea {
+    background: $sea;
   }
 
 }

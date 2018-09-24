@@ -1,17 +1,36 @@
-/* Variables */
-$grey: #3e424b;
-$darkgrey: #2b2b2b;
-$red: #b03c2a;
-$darkred: #892f21;
-$white: #F4EEF1;
-$navy: #2B303A;
-$green: #53dd6c;
-$seethruwhite: rgba(255, 255, 255, 0.9);
+$white: #edf2f4;
+$grey: #acb0bd;
+$darkgrey: #464655;
+$checkgreen: #3ec300;
+$seethruwhite: rgba(237, 242, 244, 0.95);
+
+/* Highlighting */
+$blue: #5bc0eb;
+$yellow: #fde74c;
+$green: #9bc53d;
+$orange: #fa7921;
+$red: #e55934;
+$pink: #f0a6ca;
+$purple: #9c89b8;
+$rose: #efc3e6;
+$steel: #b8bedd;
+$sea: #2ec4b6;
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: $darkgrey;
-  color: $white;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  background-color: $white;
+}
+
+button {
+  background: $grey;
+  border: none;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    background: $darkgrey;
+    color: $white;
+  }
 }
 
 .container {

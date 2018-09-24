@@ -31,6 +31,7 @@ class HintHuntModel {
       const data = snapshot.val();
       this.modal.setHeading(data.title);
       this.modal.buttonDisabled = false;
+      this.words.length = 0;
       this.clues = this.setClues(data.clues);
       this.board = new BoardModel(data.grid, this.words);
       this.title = data.title;

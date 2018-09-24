@@ -23,7 +23,7 @@
   width: 5px;
   height: 18px;
   border-radius: 10px;
-  background-color: $grey;
+  background-color: black;
 }
 
 .ml-loader div:nth-child(1) {

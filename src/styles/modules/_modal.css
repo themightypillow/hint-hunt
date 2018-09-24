@@ -1,28 +1,21 @@
 .modal {
   position: absolute;
   z-index: 5;
-  background-color: $seethruwhite;
-  width: 100%;
   height: 100%;
-  color: $red;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: 1.25rem;
-
-  &_info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 3rem;
-  }
+  align-items: center;
+  background: $seethruwhite;
 
   &_heading {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
   }
 
-  &_button {
-    display: block;
+  &_btn {
+    padding: 0.25rem;
   }
 }

@@ -1,123 +1,16 @@
 .hinthunt {
-  margin: 2rem 2rem 0 2rem;
-  position: fixed;
-
-  &-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75%;
-    margin: 0;
-  }
-
-  &_icon {
-    position: fixed;
-    height: 1rem;
-    width: 1rem;
-    border: 5px solid $red;
-    border-radius: 5rem;
-    top: 1.3rem;
-    left: 3rem;
-    z-index: 1;
-    transition: border 0.2s ease-out;
-
-    &:after {
-      position: fixed;
-      content: "";
-      height: 0.5rem;
-      width: 1rem;
-      background: $red;
-      transform: rotate(45deg);
-      top: 2.7rem;
-      left: 4rem;
-      transition: background 0.2s ease-out;
-
-      @mixin atSmall {
-        left: 6rem;
-      }
-    }
-
-    &:hover {
-      border-color: $grey;
-    }
-
-    &:hover:after {
-      background: $grey;
-    }
-
-    @mixin atSmall {
-      left: 5rem;
-    }
-
-    @mixin atMedium {
-      display: none;
-    }
-  }
-
-  &_header {
-    text-align: center;
-    margin-top: 0;
-
-    @mixin atSmall {
-      letter-spacing: 0.5rem;
-    }
-
-    @mixin atMedium {
-      text-align: left;  
-    }
-  }
+  position: relative;
   
-  &_main {
-    position: relative;
-
-    @mixin atMedium {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    @mixin atXLarge {
-      grid-template-columns: repeat(5, 1fr);
-    }
-
-  }
-
-  &_sideinfo {
-    position: absolute;
-    background-color: $navy;
-    z-index: 2;
-    padding: 0.25rem;
-    box-sizing: border-box;
-    border: 0.2rem solid $grey;
-    left: -14rem;
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    @mixin atMedium {
-      position: static;
-    }
-  }
-
-  &_icon:hover + &_sideinfo {
-    transition: 0.3s;
-    left: -2rem;
-  }
-
-  &_board {
-    transition: opacity 0.3s linear;
-  }
-
   &_animate {
     position: absolute;
     z-index: 6;
-    background-color: $seethruwhite;
-    height: 100%;
-    width: 100%;
-    color: $red;
     display: none;
     opacity: 0;
-    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    background: $seethruwhite;
 
     &-on {
       display: block;
@@ -126,7 +19,33 @@
     &-visible {
       opacity: 1;
     }
+  }
 
+  &_title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  &_game {
+    display: flex;
+    justify-content: center;
+  }
+
+  &_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-right: 1rem;
+    border: 2px solid;
+  }
+
+  &_btn {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.25rem 0;
   }
   
 }

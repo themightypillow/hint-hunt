@@ -24,11 +24,11 @@ class Modal extends React.Component {
       <div className="modal">
         {
           store.modal.loading ? 
-          <div className="modal_info"><Loader /></div> :
-          <div className="modal_info">
-            <h1 className="modal_heading">{store.modal.heading}</h1>
+          <div><Loader /></div> :
+          <div className="modal_heading">
+            <h1>{store.modal.heading}</h1>
             <button
-              className="modal_button"
+              className="modal_btn"
               onClick={store.modal.hide}
               disabled={store.modal.buttonDisabled}
             >Play Now</button>

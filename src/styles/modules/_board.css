@@ -4,7 +4,6 @@
     display: grid;
     grid-template-rows: repeat(14, 1fr);
     grid-template-columns: repeat(13, 1fr);
-    background: $grey;
   }
 
   &_no_pointer {
