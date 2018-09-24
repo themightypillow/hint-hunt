@@ -2,6 +2,14 @@
   margin: 2rem 2rem 0 2rem;
   position: fixed;
 
+  &-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    margin: 0;
+  }
+
   &_icon {
     position: fixed;
     height: 1rem;
@@ -82,6 +90,9 @@
     border: 0.2rem solid $grey;
     left: -14rem;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
     @mixin atMedium {
       position: static;
@@ -95,6 +106,27 @@
 
   &_board {
     transition: opacity 0.3s linear;
+  }
+
+  &_animate {
+    position: absolute;
+    z-index: 6;
+    background-color: $seethruwhite;
+    height: 100%;
+    width: 100%;
+    color: $red;
+    display: none;
+    opacity: 0;
+    font-size: 3rem;
+
+    &-on {
+      display: block;
+    }
+
+    &-visible {
+      opacity: 1;
+    }
+
   }
   
 }

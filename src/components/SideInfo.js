@@ -10,7 +10,7 @@ class SideInfo extends React.Component {
       <div>
        {
          Object.keys(store.clues).map(clue =>
-         <Clue key={clue} text={clue} answers={store.clues[clue]} /> )
+         <Clue key={clue} text={clue} answers={store.clues[clue]} show={store.showAnswers} /> )
        }
       </div>
     );

@@ -6,6 +6,7 @@ $darkred: #892f21;
 $white: #F4EEF1;
 $navy: #2B303A;
 $green: #53dd6c;
+$seethruwhite: rgba(255, 255, 255, 0.9);
 
 body {
   font-family: 'Poppins', sans-serif;

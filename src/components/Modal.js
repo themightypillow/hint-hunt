@@ -6,13 +6,16 @@ import Loader from "./Loader";
 @observer
 class Modal extends React.Component {
   handleDayClick = (day) => {
-    const store = this.props.store;
-    store.fetchPuzzle(day).then((snapshot) => {
-      store.setPuzzle(snapshot);
-      setTimeout(() => {
-        store.modal.hideLoading();
-      }, 1500);
-    });
+    if(this.props.store.modal.date === null || 
+    day.toDateString() !== this.props.store.modal.date.toDateString()) {
+      const store = this.props.store;
+      store.fetchPuzzle(day).then((snapshot) => {
+        store.setPuzzle(snapshot);
+        setTimeout(() => {
+          store.modal.hideLoading();
+        }, 1500);
+      });
+    }
   }
 
   render() {

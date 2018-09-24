@@ -21,6 +21,16 @@ class ModalModel {
   @action setHeading = (title) => {
     this.heading = `${this.date.toDateString()} - ${title}`;
   };
+
+  @action.bound showCalendar = () => {  
+    this.visible = true;
+    this.heading = "Choose a Date";
+    this.loading = false;
+    this.date = null;
+    this.buttonDisabled = true;
+    let animateScreen = document.querySelector(".hinthunt_animate");
+    setTimeout(() => animateScreen.classList.remove("hinthunt_animate-on", "hinthunt_animate-visible"), 500);
+  }
 }
 
 export default ModalModel;

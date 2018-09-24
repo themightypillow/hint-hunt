@@ -17,6 +17,16 @@ class Clue extends React.Component {
               )
             )
           }
+          {
+            this.props.show &&
+            this.props.answers.map((answer) => 
+              (
+                <div key={answer.word} className={answer.found ? "clue_strike" : ""}>
+                  {answer.word}
+                </div>
+              )
+            )
+          }
         </div>
       </div>
     );

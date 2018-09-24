@@ -14,6 +14,7 @@ class HintHuntModel {
   @observable title = "";
   @observable modal = new ModalModel();
   @observable showWin = false;
+  @observable showAnswers = false;
 
   @action fetchPuzzle = (date) => {
     this.modal.visible = true;
@@ -26,6 +27,7 @@ class HintHuntModel {
   @action setPuzzle = (snapshot) => {
     this.modal.date = new Date(snapshot.key.replace(/-/g, "/"));
     if(snapshot.exists()) {
+      this.showAnswers = false;
       const data = snapshot.val();
       this.modal.setHeading(data.title);
       this.modal.buttonDisabled = false;
@@ -52,9 +54,24 @@ class HintHuntModel {
   }
 
   @action checkWin = () => {
-    if(this.board.win) {
+    if(this.board.win && !this.showWin) {
       this.showWin = true;
+      this.showAnimation(1500);
     }
+  }
+
+  @action showAnimation = (ms) => {
+    let animateScreen = document.querySelector(".hinthunt_animate");
+    animateScreen.classList.add("hinthunt_animate-on", "animated", "zoomIn", "hinthunt_animate-visible");
+    setTimeout(() => {
+      animateScreen.classList.remove("animated", "zoomIn");
+      animateScreen.classList.add("animated", "fadeOut");
+      this.modal.showCalendar();
+    }, ms);
+  }
+
+  @action toggleAnswers = () => {
+    this.showAnswers = !this.showAnswers;
   }
 }
 
