@@ -23,8 +23,12 @@
 
   &_title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
+
+    @mixin atSmall {
+      font-size: 3rem;
+    }
   }
 
   &_game {
@@ -33,12 +37,78 @@
   }
 
   &_side {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
-    margin-right: 1rem;
-    border: 2px solid;
+    font-size: 0.75rem;
+    bottom: 0;
+    height: 0px;
+    background: $white;
+    z-index: 2;
+    width: 10rem;
+    transition: 0.1s;
+
+    @mixin atSmall {
+      position: absolute;
+      padding: 1rem;
+      left: -22.25rem;
+      width: 20rem;
+      border: 1px solid;
+      height: auto;
+      bottom: auto;
+      transition: 0.3s;
+    }
+
+    @mixin atMedium {
+      position: static;
+      z-index: 1;
+      width: auto;
+      margin-right: 1rem;
+    }
+
+    &-show {
+      @mixin betweenXSandS {
+        padding: 1rem;
+        border: 1px solid;
+        height: auto;
+      }
+
+      @mixin atSmall {
+        transition: 0.3s;
+        left: 1rem;
+      }
+    }
+  }
+
+  &_leftright-arrow {
+    @mixin betweenXSandS {
+      display: none;
+    }
+
+    @mixin atSmall {
+      position: absolute;
+      font-size: 1.5rem;
+      top: -0.05rem;
+      right: -1.75rem;
+      height: 100.5%;
+    }
+
+    @mixin atMedium {
+      display: none;
+    }
+  }
+
+  &_updown-arrow {
+    position: absolute;
+    font-size: 1rem;
+    top: -1.25rem;
+    left: -0.05rem;
+    width: 101%;
+
+    @mixin atSmall {
+      display: none;
+    }
   }
 
   &_btn {

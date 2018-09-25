@@ -1,6 +1,10 @@
 .clue {
   margin-bottom: 1rem;
-  font-size: 0.925rem;
+  font-size: 0.75rem;
+  
+  @mixin atSmall {
+    font-size: 0.925rem;
+  }
 
   &_boxes {
     margin-top: 0.5rem;

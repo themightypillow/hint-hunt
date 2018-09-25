@@ -3,6 +3,7 @@ import database from "../firebase/firebase";
 import ModalModel from "./ModalModel";
 import WordModel from "./WordModel";
 import BoardModel from "./BoardModel";
+import { hideClues } from "../helpers/main";
 
 // state can only be changed inside @action methods
 configure({ enforceActions: "observed" });
@@ -15,6 +16,8 @@ class HintHuntModel {
   @observable modal = new ModalModel();
   @observable showWin = false;
   @observable showAnswers = false;
+  @observable leftRightSymbol = "⟫";
+  @observable upDownSymbol = "∧";
 
   @action fetchPuzzle = (date) => {
     this.modal.visible = true;
@@ -57,6 +60,8 @@ class HintHuntModel {
   @action checkWin = () => {
     if(this.board.win && !this.showWin) {
       this.showWin = true;
+      hideClues();
+      this.resetArrows();
       this.showAnimation(1500);
     }
   }
@@ -73,6 +78,16 @@ class HintHuntModel {
 
   @action toggleAnswers = () => {
     this.showAnswers = !this.showAnswers;
+  }
+
+  @action switchArrows = () => {
+    this.leftRightSymbol === "⟫"? this.leftRightSymbol = "⟪" : this.leftRightSymbol = "⟫";
+    this.upDownSymbol === "∧"? this.upDownSymbol = "∨" : this.upDownSymbol = "∧";
+  }
+
+  @action resetArrows = () => {
+    this.leftRightSymbol = "⟫";
+    this.upDownSymbol = "∧";
   }
 }
 

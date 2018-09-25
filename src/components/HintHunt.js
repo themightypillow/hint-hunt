@@ -3,6 +3,7 @@ import { observer } from "mobx-react";
 import Modal from "./Modal";
 import ClueList from "./ClueList";
 import Board from "./Board";
+import { toggleClues, hideClues } from "../helpers/main";
 
 @observer
 class HintHunt extends React.Component {
@@ -14,7 +15,14 @@ class HintHunt extends React.Component {
   }
 
   handleClick = () => {
+    hideClues();
+    this.props.store.resetArrows();
     this.props.store.showAnimation(0);
+  }
+
+  handleArrowClick = () => {
+    toggleClues();
+    this.props.store.switchArrows();
   }
 
   render() {
@@ -33,6 +41,18 @@ class HintHunt extends React.Component {
         <h1 className="hinthunt_title">{store.title}</h1>
         <div className="hinthunt_game">
           <div className="hinthunt_side">
+            {
+              !store.modal.visible &&
+              <button onClick={this.handleArrowClick} className="hinthunt_leftright-arrow">
+                {store.leftRightSymbol}
+              </button>
+            }
+            {
+              !store.modal.visible &&
+              <button onClick={this.handleArrowClick} className="hinthunt_updown-arrow">
+                {store.upDownSymbol}
+              </button>
+            }
             <ClueList store={store} />
             <div>
               <button onClick={store.toggleAnswers} className="hinthunt_btn">

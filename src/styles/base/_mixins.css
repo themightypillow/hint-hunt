@@ -27,3 +27,9 @@
     @mixin-content;
   }
 }
+
+@define-mixin betweenXSandS {
+  @media (max-width: 599px) {
+    @mixin-content;
+  }
+}

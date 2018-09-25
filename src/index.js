@@ -8,7 +8,7 @@ import "./style.css";
 
 const store = new HintHuntModel();
 
-store.fetchPuzzle(new Date("9/14/2018")).then((snapshot) => {
+store.fetchPuzzle(new Date("9/15/2018")).then((snapshot) => {
   store.setPuzzle(snapshot);
   ReactDOM.render(<HintHunt store={store} />, document.getElementById("index"));
   setTimeout(() => {

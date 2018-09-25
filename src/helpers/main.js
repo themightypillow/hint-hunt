@@ -10,3 +10,13 @@ export const randomColorClass = () => {
   ];
   return classes[Math.floor(Math.random() * 10)];
 };
+
+export const toggleClues = () => {
+  let cluesList = document.querySelector(".hinthunt_side");
+  cluesList.classList.toggle("hinthunt_side-show");
+};
+
+export const hideClues = () => {
+  let cluesList = document.querySelector(".hinthunt_side");
+  cluesList.classList.remove("hinthunt_side-show");
+};
