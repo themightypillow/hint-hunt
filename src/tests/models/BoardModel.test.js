@@ -19,10 +19,6 @@ describe("testing BoardModel", () => {
     expect(model.win).toBeFalsy();
   });
 
-  test("should return correct index", () => {
-    expect(model.getIndex(0, 1)).toBe(1);
-  });
-
   test("should set the initial letter", () => {
     model.setInitial(letter);
     expect(model.initial).toEqual(letter);

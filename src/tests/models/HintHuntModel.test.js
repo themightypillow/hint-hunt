@@ -6,7 +6,7 @@ import database from "../../firebase/firebase";
 import generator from "../../generator/main";
 
 afterAll((done) => {
-  database.ref("20180921").remove().then(() => {
+  database.ref("9-2-2018").remove().then(() => {
     done();
   });
 });
@@ -38,6 +38,31 @@ describe("testing HintHuntModel", () => {
     expect(model.showWin).toBeFalsy();
   });
 
+  test("should set showAnswers to false by default", () => {
+    expect(model.showAnswers).toBeFalsy();
+  });
+
+  test("should set leftRightSymbol to be right symbol by default", () => {
+    expect(model.leftRightSymbol).toBe("⟫");
+  });
+
+  test("should set upDownSymbol to be up symbol by default", () => {
+    expect(model.upDownSymbol).toBe("∧");
+  });
+
+  test("should set showAnswers to true", () => {
+    model.toggleAnswers();
+    expect(model.showAnswers).toBeTruthy();
+  });
+
+  test("should switch leftRightSymbol to left and upDownSymbol to down", () => {
+    model.switchArrows();
+    expect(
+      model.leftRightSymbol === "⟪" &&
+      model.upDownSymbol === "∨"
+    ).toBeTruthy();
+  });
+
   test("should setup clues correctly", () => {
     const cluesData = {
       A: ["B"],
@@ -56,12 +81,21 @@ describe("testing HintHuntModel", () => {
     expect(model.words.length > 0).toBeTruthy();
   });
 
-  test("should handle win scenario", () => {
-    model.board = new BoardModel(["A", "B", "C", "D"], model.words);
-    model.board.win = true;
-    model.checkWin();
-    expect(model.showWin).toBeTruthy();
-  });
+  // test("should handle win scenario", () => {
+  //   model.board = new BoardModel(["A", "B", "C", "D"], model.words);
+  //   model.board.win = true;
+  //   model.checkWin();
+  //   expect(model.showWin).toBeTruthy();
+  // });
+
+  // test("should have reset arrows after win", () => {
+  //   expect(
+  //     model.leftRightSymbol === "⟫" &&
+  //     model.upDownSymbol === "∧"
+  //   ).toBeTruthy();
+  // });
+
+  // test showAnimation()
 });
 
 describe("adding puzzle from database", () => {
@@ -70,26 +104,22 @@ describe("adding puzzle from database", () => {
 
   beforeAll((done) => {
     const data = generator.readFile("./puzzles/test2");
-    generator.addToDatabase("20180921", data.puzzle, data.clues, data.title, database)
+    generator.addToDatabase("9-2-2018", data.puzzle, data.clues, data.title, database)
       .then(() => {
         done();
       });
   });
 
-  test("should have set modal title", (done) => {
-    model.fetchPuzzle("20180921").then((snapshot) => {
+  test("should have set modal heading", (done) => {
+    model.fetchPuzzle(new Date("9/2/2018")).then((snapshot) => {
       model.setPuzzle(snapshot);
-      expect(model.modal.text).toBe("Sep 21, 2018 - ABC");
+      expect(model.modal.heading).toBe("Sun Sep 02 2018 - ABC");
       done();
     });
   });
 
-  test("should have set modal button to be true", () => {
-    expect(model.modal.button).toBeTruthy();
-  });
-
-  test("should have set modal button text", () => {
-    expect(model.modal.buttonText).toBe("Play Now");
+  test("should have set modal button to not be disabled", () => {
+    expect(model.modal.buttonDisabled).toBeFalsy();
   });
 
   test("should have set the value of clues", () => {
@@ -102,5 +132,21 @@ describe("adding puzzle from database", () => {
 
   test("should have set title", () => {
     expect(model.title).toBe("ABC");
+  });
+});
+
+describe("fetching nonexistent puzzle from database", () => {
+  const model = new HintHuntModel();
+
+  test("should have set modal heading correctly", (done) => {
+    model.fetchPuzzle(new Date("8/1/2018")).then((snapshot) => {
+      model.setPuzzle(snapshot);
+      expect(model.modal.heading).toBe("Wed Aug 01 2018 - No Puzzle");
+      done();
+    });
+  });
+
+  test("should have set modal button to be disabled", () => {
+    expect(model.modal.buttonDisabled).toBeTruthy();
   });
 });

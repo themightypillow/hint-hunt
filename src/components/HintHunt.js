@@ -1,7 +1,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 import Modal from "./Modal";
-import ClueList from "./ClueList";
+import CluesList from "./CluesList";
 import Board from "./Board";
 import { toggleClues, hideClues } from "../helpers/main";
 
@@ -53,7 +53,7 @@ class HintHunt extends React.Component {
                 {store.upDownSymbol}
               </button>
             }
-            <ClueList store={store} />
+            <CluesList store={store} />
             <div>
               <button onClick={store.toggleAnswers} className="hinthunt_btn">
                 {store.showAnswers ? "Hide Words" : "Show Words"}

@@ -1,0 +1,2953 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render CluesList with one clue 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CluesList
+    store={
+      HintHuntModel {
+        "board": undefined,
+        "clues": Object {
+          "A": Array [
+            WordModel {
+              "found": false,
+              "word": "B",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "WordModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "WordModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "word" => "B",
+                  "found" => false,
+                },
+              },
+            },
+          ],
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": true,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 1,
+              "lowestObserverState": 0,
+              "name": "HintHuntModel@2.clues.keys",
+              "observers": Set {
+                Reaction$$1 {
+                  "__mapid": "#4",
+                  "_isRunning": false,
+                  "_isScheduled": false,
+                  "_isTrackPending": false,
+                  "dependenciesState": 0,
+                  "diffValue": 0,
+                  "errorHandler": undefined,
+                  "isDisposed": false,
+                  "isTracing": 0,
+                  "name": "CluesList#undefined.render()",
+                  "newObserving": null,
+                  "observing": Array [
+                    Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": true,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 1,
+                      "lowestObserverState": 0,
+                      "name": "reactive props",
+                      "observers": Set {
+                        [Circular],
+                      },
+                      "onBecomeObserved": [Function],
+                      "onBecomeUnobserved": [Function],
+                    },
+                    [Circular],
+                    [Circular],
+                    Array [
+                      WordModel {
+                        "found": false,
+                        "word": "B",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "WordModel@1.keys",
+                            "observers": Set {},
+                          },
+                          "name": "WordModel@1",
+                          "target": [Circular],
+                          "values": Map {
+                            "word" => "B",
+                            "found" => false,
+                          },
+                        },
+                      },
+                    ],
+                    false,
+                  ],
+                  "onInvalidate": [Function],
+                  "reactComponent": CluesList {
+                    "context": Object {},
+                    "refs": Object {},
+                    "render": [Function],
+                    "setState": [Function],
+                    "updater": Updater {
+                      "_callbacks": Array [],
+                      "_renderer": ReactShallowRenderer {
+                        "_context": Object {},
+                        "_element": <CluesList
+                          store={[Circular]}
+                        />,
+                        "_forcedUpdate": false,
+                        "_instance": [Circular],
+                        "_newState": null,
+                        "_rendered": <div>
+                          <Clue
+                            answers={
+                              Array [
+                                WordModel {
+                                  "found": false,
+                                  "word": "B",
+                                  Symbol(mobx did run lazy initializers): true,
+                                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                                    "defaultEnhancer": [Function],
+                                    "keysAtom": Atom$$1 {
+                                      "diffValue": 0,
+                                      "isBeingObserved": false,
+                                      "isPendingUnobservation": false,
+                                      "lastAccessedBy": 0,
+                                      "lowestObserverState": 2,
+                                      "name": "WordModel@1.keys",
+                                      "observers": Set {},
+                                    },
+                                    "name": "WordModel@1",
+                                    "target": [Circular],
+                                    "values": Map {
+                                      "word" => "B",
+                                      "found" => false,
+                                    },
+                                  },
+                                },
+                              ]
+                            }
+                            show={false}
+                            text="A"
+                          />
+                        </div>,
+                        "_rendering": false,
+                        "_updater": [Circular],
+                      },
+                    },
+                    Symbol(props value holder): Object {
+                      "store": [Circular],
+                    },
+                    Symbol(skipRender): false,
+                    Symbol(props atom holder): Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": true,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 1,
+                      "lowestObserverState": 0,
+                      "name": "reactive props",
+                      "observers": Set {
+                        [Circular],
+                      },
+                      "onBecomeObserved": [Function],
+                      "onBecomeUnobserved": [Function],
+                    },
+                    Symbol(state atom holder): Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "reactive state",
+                      "observers": Set {},
+                      "onBecomeObserved": [Function],
+                      "onBecomeUnobserved": [Function],
+                    },
+                    Symbol(state value holder): null,
+                    Symbol(isForcingUpdate): false,
+                    Symbol(enzyme.__setState__): [Function],
+                  },
+                  "runId": 1,
+                  "unboundDepsCount": 5,
+                },
+              },
+            },
+            "name": "HintHuntModel@2.clues",
+            "pendingKeys": Map {
+              "$$typeof" => false,
+              "nodeType" => false,
+              "@@__IMMUTABLE_ITERABLE__@@" => false,
+              "@@__IMMUTABLE_RECORD__@@" => false,
+              "_isMockFunction" => false,
+              "toJSON" => false,
+            },
+            "proxy": [Circular],
+            "target": Object {
+              "A": Array [
+                WordModel {
+                  "found": false,
+                  "word": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@1.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@1",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "B",
+                      "found" => false,
+                    },
+                  },
+                },
+              ],
+              Symbol(mobx administration): [Circular],
+            },
+            "values": Map {
+              "A" => Array [
+                WordModel {
+                  "found": false,
+                  "word": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@1.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@1",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "B",
+                      "found" => false,
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+        "leftRightSymbol": "⟫",
+        "modal": ModalModel {
+          "buttonDisabled": false,
+          "date": null,
+          "heading": "",
+          "loading": false,
+          "visible": false,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "ModalModel@3.keys",
+              "observers": Set {},
+            },
+            "name": "ModalModel@3",
+            "target": [Circular],
+            "values": Map {
+              "visible" => false,
+              "heading" => "",
+              "loading" => false,
+              "date" => null,
+              "buttonDisabled" => false,
+            },
+          },
+        },
+        "showAnswers": false,
+        "showWin": false,
+        "title": "",
+        "upDownSymbol": "∧",
+        "words": Array [
+          WordModel {
+            "found": false,
+            "word": "B",
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "WordModel@1.keys",
+                "observers": Set {},
+              },
+              "name": "WordModel@1",
+              "target": [Circular],
+              "values": Map {
+                "word" => "B",
+                "found" => false,
+              },
+            },
+          },
+        ],
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "HintHuntModel@2.keys",
+            "observers": Set {},
+          },
+          "name": "HintHuntModel@2",
+          "target": [Circular],
+          "values": Map {
+            "board" => undefined,
+            "clues" => Object {
+              "A": Array [
+                WordModel {
+                  "found": false,
+                  "word": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@1.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@1",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "B",
+                      "found" => false,
+                    },
+                  },
+                },
+              ],
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": true,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 1,
+                  "lowestObserverState": 0,
+                  "name": "HintHuntModel@2.clues.keys",
+                  "observers": Set {
+                    Reaction$$1 {
+                      "__mapid": "#4",
+                      "_isRunning": false,
+                      "_isScheduled": false,
+                      "_isTrackPending": false,
+                      "dependenciesState": 0,
+                      "diffValue": 0,
+                      "errorHandler": undefined,
+                      "isDisposed": false,
+                      "isTracing": 0,
+                      "name": "CluesList#undefined.render()",
+                      "newObserving": null,
+                      "observing": Array [
+                        Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": true,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 1,
+                          "lowestObserverState": 0,
+                          "name": "reactive props",
+                          "observers": Set {
+                            [Circular],
+                          },
+                          "onBecomeObserved": [Function],
+                          "onBecomeUnobserved": [Function],
+                        },
+                        [Circular],
+                        [Circular],
+                        Array [
+                          WordModel {
+                            "found": false,
+                            "word": "B",
+                            Symbol(mobx did run lazy initializers): true,
+                            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                              "defaultEnhancer": [Function],
+                              "keysAtom": Atom$$1 {
+                                "diffValue": 0,
+                                "isBeingObserved": false,
+                                "isPendingUnobservation": false,
+                                "lastAccessedBy": 0,
+                                "lowestObserverState": 2,
+                                "name": "WordModel@1.keys",
+                                "observers": Set {},
+                              },
+                              "name": "WordModel@1",
+                              "target": [Circular],
+                              "values": Map {
+                                "word" => "B",
+                                "found" => false,
+                              },
+                            },
+                          },
+                        ],
+                        false,
+                      ],
+                      "onInvalidate": [Function],
+                      "reactComponent": CluesList {
+                        "context": Object {},
+                        "refs": Object {},
+                        "render": [Function],
+                        "setState": [Function],
+                        "updater": Updater {
+                          "_callbacks": Array [],
+                          "_renderer": ReactShallowRenderer {
+                            "_context": Object {},
+                            "_element": <CluesList
+                              store={[Circular]}
+                            />,
+                            "_forcedUpdate": false,
+                            "_instance": [Circular],
+                            "_newState": null,
+                            "_rendered": <div>
+                              <Clue
+                                answers={
+                                  Array [
+                                    WordModel {
+                                      "found": false,
+                                      "word": "B",
+                                      Symbol(mobx did run lazy initializers): true,
+                                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                                        "defaultEnhancer": [Function],
+                                        "keysAtom": Atom$$1 {
+                                          "diffValue": 0,
+                                          "isBeingObserved": false,
+                                          "isPendingUnobservation": false,
+                                          "lastAccessedBy": 0,
+                                          "lowestObserverState": 2,
+                                          "name": "WordModel@1.keys",
+                                          "observers": Set {},
+                                        },
+                                        "name": "WordModel@1",
+                                        "target": [Circular],
+                                        "values": Map {
+                                          "word" => "B",
+                                          "found" => false,
+                                        },
+                                      },
+                                    },
+                                  ]
+                                }
+                                show={false}
+                                text="A"
+                              />
+                            </div>,
+                            "_rendering": false,
+                            "_updater": [Circular],
+                          },
+                        },
+                        Symbol(props value holder): Object {
+                          "store": [Circular],
+                        },
+                        Symbol(skipRender): false,
+                        Symbol(props atom holder): Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": true,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 1,
+                          "lowestObserverState": 0,
+                          "name": "reactive props",
+                          "observers": Set {
+                            [Circular],
+                          },
+                          "onBecomeObserved": [Function],
+                          "onBecomeUnobserved": [Function],
+                        },
+                        Symbol(state atom holder): Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "reactive state",
+                          "observers": Set {},
+                          "onBecomeObserved": [Function],
+                          "onBecomeUnobserved": [Function],
+                        },
+                        Symbol(state value holder): null,
+                        Symbol(isForcingUpdate): false,
+                        Symbol(enzyme.__setState__): [Function],
+                      },
+                      "runId": 1,
+                      "unboundDepsCount": 5,
+                    },
+                  },
+                },
+                "name": "HintHuntModel@2.clues",
+                "pendingKeys": Map {
+                  "$$typeof" => false,
+                  "nodeType" => false,
+                  "@@__IMMUTABLE_ITERABLE__@@" => false,
+                  "@@__IMMUTABLE_RECORD__@@" => false,
+                  "_isMockFunction" => false,
+                  "toJSON" => false,
+                },
+                "proxy": [Circular],
+                "target": Object {
+                  "A": Array [
+                    WordModel {
+                      "found": false,
+                      "word": "B",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "WordModel@1.keys",
+                          "observers": Set {},
+                        },
+                        "name": "WordModel@1",
+                        "target": [Circular],
+                        "values": Map {
+                          "word" => "B",
+                          "found" => false,
+                        },
+                      },
+                    },
+                  ],
+                  Symbol(mobx administration): [Circular],
+                },
+                "values": Map {
+                  "A" => Array [
+                    WordModel {
+                      "found": false,
+                      "word": "B",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "WordModel@1.keys",
+                          "observers": Set {},
+                        },
+                        "name": "WordModel@1",
+                        "target": [Circular],
+                        "values": Map {
+                          "word" => "B",
+                          "found" => false,
+                        },
+                      },
+                    },
+                  ],
+                },
+              },
+            },
+            "words" => Array [
+              WordModel {
+                "found": false,
+                "word": "B",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "WordModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "WordModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "word" => "B",
+                    "found" => false,
+                  },
+                },
+              },
+            ],
+            "title" => "",
+            "modal" => ModalModel {
+              "buttonDisabled": false,
+              "date": null,
+              "heading": "",
+              "loading": false,
+              "visible": false,
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "ModalModel@3.keys",
+                  "observers": Set {},
+                },
+                "name": "ModalModel@3",
+                "target": [Circular],
+                "values": Map {
+                  "visible" => false,
+                  "heading" => "",
+                  "loading" => false,
+                  "date" => null,
+                  "buttonDisabled" => false,
+                },
+              },
+            },
+            "showWin" => false,
+            "showAnswers" => false,
+            "leftRightSymbol" => "⟫",
+            "upDownSymbol" => "∧",
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Clue
+          answers={
+            Array [
+              WordModel {
+                "found": false,
+                "word": "B",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "WordModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "WordModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "word" => "B",
+                    "found" => false,
+                  },
+                },
+              },
+            ]
+          }
+          show={false}
+          text="A"
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "A",
+        "nodeType": "class",
+        "props": Object {
+          "answers": Array [
+            WordModel {
+              "found": false,
+              "word": "B",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "WordModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "WordModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "word" => "B",
+                  "found" => false,
+                },
+              },
+            },
+          ],
+          "show": false,
+          "text": "A",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Clue
+            answers={
+              Array [
+                WordModel {
+                  "found": false,
+                  "word": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@1.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@1",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "B",
+                      "found" => false,
+                    },
+                  },
+                },
+              ]
+            }
+            show={false}
+            text="A"
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "A",
+          "nodeType": "class",
+          "props": Object {
+            "answers": Array [
+              WordModel {
+                "found": false,
+                "word": "B",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "WordModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "WordModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "word" => "B",
+                    "found" => false,
+                  },
+                },
+              },
+            ],
+            "show": false,
+            "text": "A",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`should render CluesList with one clue, answers shown 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CluesList
+    store={
+      HintHuntModel {
+        "board": undefined,
+        "clues": Object {
+          "A": Array [
+            WordModel {
+              "found": false,
+              "word": "B",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "WordModel@5.keys",
+                  "observers": Set {},
+                },
+                "name": "WordModel@5",
+                "target": [Circular],
+                "values": Map {
+                  "word" => "B",
+                  "found" => false,
+                },
+              },
+            },
+          ],
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": true,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 2,
+              "lowestObserverState": 0,
+              "name": "HintHuntModel@6.clues.keys",
+              "observers": Set {
+                Reaction$$1 {
+                  "__mapid": "#8",
+                  "_isRunning": false,
+                  "_isScheduled": false,
+                  "_isTrackPending": false,
+                  "dependenciesState": 0,
+                  "diffValue": 0,
+                  "errorHandler": undefined,
+                  "isDisposed": false,
+                  "isTracing": 0,
+                  "name": "CluesList#undefined.render()",
+                  "newObserving": null,
+                  "observing": Array [
+                    Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": true,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 2,
+                      "lowestObserverState": 0,
+                      "name": "reactive props",
+                      "observers": Set {
+                        [Circular],
+                      },
+                      "onBecomeObserved": [Function],
+                      "onBecomeUnobserved": [Function],
+                    },
+                    [Circular],
+                    [Circular],
+                    Array [
+                      WordModel {
+                        "found": false,
+                        "word": "B",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "WordModel@5.keys",
+                            "observers": Set {},
+                          },
+                          "name": "WordModel@5",
+                          "target": [Circular],
+                          "values": Map {
+                            "word" => "B",
+                            "found" => false,
+                          },
+                        },
+                      },
+                    ],
+                    true,
+                  ],
+                  "onInvalidate": [Function],
+                  "reactComponent": CluesList {
+                    "context": Object {},
+                    "refs": Object {},
+                    "render": [Function],
+                    "setState": [Function],
+                    "updater": Updater {
+                      "_callbacks": Array [],
+                      "_renderer": ReactShallowRenderer {
+                        "_context": Object {},
+                        "_element": <CluesList
+                          store={[Circular]}
+                        />,
+                        "_forcedUpdate": false,
+                        "_instance": [Circular],
+                        "_newState": null,
+                        "_rendered": <div>
+                          <Clue
+                            answers={
+                              Array [
+                                WordModel {
+                                  "found": false,
+                                  "word": "B",
+                                  Symbol(mobx did run lazy initializers): true,
+                                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                                    "defaultEnhancer": [Function],
+                                    "keysAtom": Atom$$1 {
+                                      "diffValue": 0,
+                                      "isBeingObserved": false,
+                                      "isPendingUnobservation": false,
+                                      "lastAccessedBy": 0,
+                                      "lowestObserverState": 2,
+                                      "name": "WordModel@5.keys",
+                                      "observers": Set {},
+                                    },
+                                    "name": "WordModel@5",
+                                    "target": [Circular],
+                                    "values": Map {
+                                      "word" => "B",
+                                      "found" => false,
+                                    },
+                                  },
+                                },
+                              ]
+                            }
+                            show={true}
+                            text="A"
+                          />
+                        </div>,
+                        "_rendering": false,
+                        "_updater": [Circular],
+                      },
+                    },
+                    Symbol(props value holder): Object {
+                      "store": [Circular],
+                    },
+                    Symbol(skipRender): false,
+                    Symbol(props atom holder): Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": true,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 2,
+                      "lowestObserverState": 0,
+                      "name": "reactive props",
+                      "observers": Set {
+                        [Circular],
+                      },
+                      "onBecomeObserved": [Function],
+                      "onBecomeUnobserved": [Function],
+                    },
+                    Symbol(state atom holder): Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "reactive state",
+                      "observers": Set {},
+                      "onBecomeObserved": [Function],
+                      "onBecomeUnobserved": [Function],
+                    },
+                    Symbol(state value holder): null,
+                    Symbol(isForcingUpdate): false,
+                    Symbol(enzyme.__setState__): [Function],
+                  },
+                  "runId": 2,
+                  "unboundDepsCount": 5,
+                },
+              },
+            },
+            "name": "HintHuntModel@6.clues",
+            "pendingKeys": Map {
+              "$$typeof" => false,
+              "nodeType" => false,
+              "@@__IMMUTABLE_ITERABLE__@@" => false,
+              "@@__IMMUTABLE_RECORD__@@" => false,
+              "_isMockFunction" => false,
+              "toJSON" => false,
+            },
+            "proxy": [Circular],
+            "target": Object {
+              "A": Array [
+                WordModel {
+                  "found": false,
+                  "word": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@5.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@5",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "B",
+                      "found" => false,
+                    },
+                  },
+                },
+              ],
+              Symbol(mobx administration): [Circular],
+            },
+            "values": Map {
+              "A" => Array [
+                WordModel {
+                  "found": false,
+                  "word": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@5.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@5",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "B",
+                      "found" => false,
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+        "leftRightSymbol": "⟫",
+        "modal": ModalModel {
+          "buttonDisabled": false,
+          "date": null,
+          "heading": "",
+          "loading": false,
+          "visible": false,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "ModalModel@7.keys",
+              "observers": Set {},
+            },
+            "name": "ModalModel@7",
+            "target": [Circular],
+            "values": Map {
+              "visible" => false,
+              "heading" => "",
+              "loading" => false,
+              "date" => null,
+              "buttonDisabled" => false,
+            },
+          },
+        },
+        "showAnswers": true,
+        "showWin": false,
+        "title": "",
+        "upDownSymbol": "∧",
+        "words": Array [
+          WordModel {
+            "found": false,
+            "word": "B",
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "WordModel@5.keys",
+                "observers": Set {},
+              },
+              "name": "WordModel@5",
+              "target": [Circular],
+              "values": Map {
+                "word" => "B",
+                "found" => false,
+              },
+            },
+          },
+        ],
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "HintHuntModel@6.keys",
+            "observers": Set {},
+          },
+          "name": "HintHuntModel@6",
+          "target": [Circular],
+          "values": Map {
+            "board" => undefined,
+            "clues" => Object {
+              "A": Array [
+                WordModel {
+                  "found": false,
+                  "word": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@5.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@5",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "B",
+                      "found" => false,
+                    },
+                  },
+                },
+              ],
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": true,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 2,
+                  "lowestObserverState": 0,
+                  "name": "HintHuntModel@6.clues.keys",
+                  "observers": Set {
+                    Reaction$$1 {
+                      "__mapid": "#8",
+                      "_isRunning": false,
+                      "_isScheduled": false,
+                      "_isTrackPending": false,
+                      "dependenciesState": 0,
+                      "diffValue": 0,
+                      "errorHandler": undefined,
+                      "isDisposed": false,
+                      "isTracing": 0,
+                      "name": "CluesList#undefined.render()",
+                      "newObserving": null,
+                      "observing": Array [
+                        Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": true,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 2,
+                          "lowestObserverState": 0,
+                          "name": "reactive props",
+                          "observers": Set {
+                            [Circular],
+                          },
+                          "onBecomeObserved": [Function],
+                          "onBecomeUnobserved": [Function],
+                        },
+                        [Circular],
+                        [Circular],
+                        Array [
+                          WordModel {
+                            "found": false,
+                            "word": "B",
+                            Symbol(mobx did run lazy initializers): true,
+                            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                              "defaultEnhancer": [Function],
+                              "keysAtom": Atom$$1 {
+                                "diffValue": 0,
+                                "isBeingObserved": false,
+                                "isPendingUnobservation": false,
+                                "lastAccessedBy": 0,
+                                "lowestObserverState": 2,
+                                "name": "WordModel@5.keys",
+                                "observers": Set {},
+                              },
+                              "name": "WordModel@5",
+                              "target": [Circular],
+                              "values": Map {
+                                "word" => "B",
+                                "found" => false,
+                              },
+                            },
+                          },
+                        ],
+                        true,
+                      ],
+                      "onInvalidate": [Function],
+                      "reactComponent": CluesList {
+                        "context": Object {},
+                        "refs": Object {},
+                        "render": [Function],
+                        "setState": [Function],
+                        "updater": Updater {
+                          "_callbacks": Array [],
+                          "_renderer": ReactShallowRenderer {
+                            "_context": Object {},
+                            "_element": <CluesList
+                              store={[Circular]}
+                            />,
+                            "_forcedUpdate": false,
+                            "_instance": [Circular],
+                            "_newState": null,
+                            "_rendered": <div>
+                              <Clue
+                                answers={
+                                  Array [
+                                    WordModel {
+                                      "found": false,
+                                      "word": "B",
+                                      Symbol(mobx did run lazy initializers): true,
+                                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                                        "defaultEnhancer": [Function],
+                                        "keysAtom": Atom$$1 {
+                                          "diffValue": 0,
+                                          "isBeingObserved": false,
+                                          "isPendingUnobservation": false,
+                                          "lastAccessedBy": 0,
+                                          "lowestObserverState": 2,
+                                          "name": "WordModel@5.keys",
+                                          "observers": Set {},
+                                        },
+                                        "name": "WordModel@5",
+                                        "target": [Circular],
+                                        "values": Map {
+                                          "word" => "B",
+                                          "found" => false,
+                                        },
+                                      },
+                                    },
+                                  ]
+                                }
+                                show={true}
+                                text="A"
+                              />
+                            </div>,
+                            "_rendering": false,
+                            "_updater": [Circular],
+                          },
+                        },
+                        Symbol(props value holder): Object {
+                          "store": [Circular],
+                        },
+                        Symbol(skipRender): false,
+                        Symbol(props atom holder): Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": true,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 2,
+                          "lowestObserverState": 0,
+                          "name": "reactive props",
+                          "observers": Set {
+                            [Circular],
+                          },
+                          "onBecomeObserved": [Function],
+                          "onBecomeUnobserved": [Function],
+                        },
+                        Symbol(state atom holder): Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "reactive state",
+                          "observers": Set {},
+                          "onBecomeObserved": [Function],
+                          "onBecomeUnobserved": [Function],
+                        },
+                        Symbol(state value holder): null,
+                        Symbol(isForcingUpdate): false,
+                        Symbol(enzyme.__setState__): [Function],
+                      },
+                      "runId": 2,
+                      "unboundDepsCount": 5,
+                    },
+                  },
+                },
+                "name": "HintHuntModel@6.clues",
+                "pendingKeys": Map {
+                  "$$typeof" => false,
+                  "nodeType" => false,
+                  "@@__IMMUTABLE_ITERABLE__@@" => false,
+                  "@@__IMMUTABLE_RECORD__@@" => false,
+                  "_isMockFunction" => false,
+                  "toJSON" => false,
+                },
+                "proxy": [Circular],
+                "target": Object {
+                  "A": Array [
+                    WordModel {
+                      "found": false,
+                      "word": "B",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "WordModel@5.keys",
+                          "observers": Set {},
+                        },
+                        "name": "WordModel@5",
+                        "target": [Circular],
+                        "values": Map {
+                          "word" => "B",
+                          "found" => false,
+                        },
+                      },
+                    },
+                  ],
+                  Symbol(mobx administration): [Circular],
+                },
+                "values": Map {
+                  "A" => Array [
+                    WordModel {
+                      "found": false,
+                      "word": "B",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "WordModel@5.keys",
+                          "observers": Set {},
+                        },
+                        "name": "WordModel@5",
+                        "target": [Circular],
+                        "values": Map {
+                          "word" => "B",
+                          "found" => false,
+                        },
+                      },
+                    },
+                  ],
+                },
+              },
+            },
+            "words" => Array [
+              WordModel {
+                "found": false,
+                "word": "B",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "WordModel@5.keys",
+                    "observers": Set {},
+                  },
+                  "name": "WordModel@5",
+                  "target": [Circular],
+                  "values": Map {
+                    "word" => "B",
+                    "found" => false,
+                  },
+                },
+              },
+            ],
+            "title" => "",
+            "modal" => ModalModel {
+              "buttonDisabled": false,
+              "date": null,
+              "heading": "",
+              "loading": false,
+              "visible": false,
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "ModalModel@7.keys",
+                  "observers": Set {},
+                },
+                "name": "ModalModel@7",
+                "target": [Circular],
+                "values": Map {
+                  "visible" => false,
+                  "heading" => "",
+                  "loading" => false,
+                  "date" => null,
+                  "buttonDisabled" => false,
+                },
+              },
+            },
+            "showWin" => false,
+            "showAnswers" => true,
+            "leftRightSymbol" => "⟫",
+            "upDownSymbol" => "∧",
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Clue
+          answers={
+            Array [
+              WordModel {
+                "found": false,
+                "word": "B",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "WordModel@5.keys",
+                    "observers": Set {},
+                  },
+                  "name": "WordModel@5",
+                  "target": [Circular],
+                  "values": Map {
+                    "word" => "B",
+                    "found" => false,
+                  },
+                },
+              },
+            ]
+          }
+          show={true}
+          text="A"
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "A",
+        "nodeType": "class",
+        "props": Object {
+          "answers": Array [
+            WordModel {
+              "found": false,
+              "word": "B",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "WordModel@5.keys",
+                  "observers": Set {},
+                },
+                "name": "WordModel@5",
+                "target": [Circular],
+                "values": Map {
+                  "word" => "B",
+                  "found" => false,
+                },
+              },
+            },
+          ],
+          "show": true,
+          "text": "A",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Clue
+            answers={
+              Array [
+                WordModel {
+                  "found": false,
+                  "word": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@5.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@5",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "B",
+                      "found" => false,
+                    },
+                  },
+                },
+              ]
+            }
+            show={true}
+            text="A"
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "A",
+          "nodeType": "class",
+          "props": Object {
+            "answers": Array [
+              WordModel {
+                "found": false,
+                "word": "B",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "WordModel@5.keys",
+                    "observers": Set {},
+                  },
+                  "name": "WordModel@5",
+                  "target": [Circular],
+                  "values": Map {
+                    "word" => "B",
+                    "found" => false,
+                  },
+                },
+              },
+            ],
+            "show": true,
+            "text": "A",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`should render CluesList with two clues 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CluesList
+    store={
+      HintHuntModel {
+        "board": undefined,
+        "clues": Object {
+          "A": Array [
+            WordModel {
+              "found": false,
+              "word": "B",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "WordModel@9.keys",
+                  "observers": Set {},
+                },
+                "name": "WordModel@9",
+                "target": [Circular],
+                "values": Map {
+                  "word" => "B",
+                  "found" => false,
+                },
+              },
+            },
+          ],
+          "C": Array [
+            WordModel {
+              "found": false,
+              "word": "D",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "WordModel@12.keys",
+                  "observers": Set {},
+                },
+                "name": "WordModel@12",
+                "target": [Circular],
+                "values": Map {
+                  "word" => "D",
+                  "found" => false,
+                },
+              },
+            },
+          ],
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": true,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 3,
+              "lowestObserverState": 0,
+              "name": "HintHuntModel@10.clues.keys",
+              "observers": Set {
+                Reaction$$1 {
+                  "__mapid": "#13",
+                  "_isRunning": false,
+                  "_isScheduled": false,
+                  "_isTrackPending": false,
+                  "dependenciesState": 0,
+                  "diffValue": 0,
+                  "errorHandler": undefined,
+                  "isDisposed": false,
+                  "isTracing": 0,
+                  "name": "CluesList#undefined.render()",
+                  "newObserving": null,
+                  "observing": Array [
+                    Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": true,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 3,
+                      "lowestObserverState": 0,
+                      "name": "reactive props",
+                      "observers": Set {
+                        [Circular],
+                      },
+                      "onBecomeObserved": [Function],
+                      "onBecomeUnobserved": [Function],
+                    },
+                    [Circular],
+                    [Circular],
+                    Array [
+                      WordModel {
+                        "found": false,
+                        "word": "B",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "WordModel@9.keys",
+                            "observers": Set {},
+                          },
+                          "name": "WordModel@9",
+                          "target": [Circular],
+                          "values": Map {
+                            "word" => "B",
+                            "found" => false,
+                          },
+                        },
+                      },
+                    ],
+                    false,
+                    Array [
+                      WordModel {
+                        "found": false,
+                        "word": "D",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "WordModel@12.keys",
+                            "observers": Set {},
+                          },
+                          "name": "WordModel@12",
+                          "target": [Circular],
+                          "values": Map {
+                            "word" => "D",
+                            "found" => false,
+                          },
+                        },
+                      },
+                    ],
+                  ],
+                  "onInvalidate": [Function],
+                  "reactComponent": CluesList {
+                    "context": Object {},
+                    "refs": Object {},
+                    "render": [Function],
+                    "setState": [Function],
+                    "updater": Updater {
+                      "_callbacks": Array [],
+                      "_renderer": ReactShallowRenderer {
+                        "_context": Object {},
+                        "_element": <CluesList
+                          store={[Circular]}
+                        />,
+                        "_forcedUpdate": false,
+                        "_instance": [Circular],
+                        "_newState": null,
+                        "_rendered": <div>
+                          <Clue
+                            answers={
+                              Array [
+                                WordModel {
+                                  "found": false,
+                                  "word": "B",
+                                  Symbol(mobx did run lazy initializers): true,
+                                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                                    "defaultEnhancer": [Function],
+                                    "keysAtom": Atom$$1 {
+                                      "diffValue": 0,
+                                      "isBeingObserved": false,
+                                      "isPendingUnobservation": false,
+                                      "lastAccessedBy": 0,
+                                      "lowestObserverState": 2,
+                                      "name": "WordModel@9.keys",
+                                      "observers": Set {},
+                                    },
+                                    "name": "WordModel@9",
+                                    "target": [Circular],
+                                    "values": Map {
+                                      "word" => "B",
+                                      "found" => false,
+                                    },
+                                  },
+                                },
+                              ]
+                            }
+                            show={false}
+                            text="A"
+                          />
+                          <Clue
+                            answers={
+                              Array [
+                                WordModel {
+                                  "found": false,
+                                  "word": "D",
+                                  Symbol(mobx did run lazy initializers): true,
+                                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                                    "defaultEnhancer": [Function],
+                                    "keysAtom": Atom$$1 {
+                                      "diffValue": 0,
+                                      "isBeingObserved": false,
+                                      "isPendingUnobservation": false,
+                                      "lastAccessedBy": 0,
+                                      "lowestObserverState": 2,
+                                      "name": "WordModel@12.keys",
+                                      "observers": Set {},
+                                    },
+                                    "name": "WordModel@12",
+                                    "target": [Circular],
+                                    "values": Map {
+                                      "word" => "D",
+                                      "found" => false,
+                                    },
+                                  },
+                                },
+                              ]
+                            }
+                            show={false}
+                            text="C"
+                          />
+                        </div>,
+                        "_rendering": false,
+                        "_updater": [Circular],
+                      },
+                    },
+                    Symbol(props value holder): Object {
+                      "store": [Circular],
+                    },
+                    Symbol(skipRender): false,
+                    Symbol(props atom holder): Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": true,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 3,
+                      "lowestObserverState": 0,
+                      "name": "reactive props",
+                      "observers": Set {
+                        [Circular],
+                      },
+                      "onBecomeObserved": [Function],
+                      "onBecomeUnobserved": [Function],
+                    },
+                    Symbol(state atom holder): Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "reactive state",
+                      "observers": Set {},
+                      "onBecomeObserved": [Function],
+                      "onBecomeUnobserved": [Function],
+                    },
+                    Symbol(state value holder): null,
+                    Symbol(isForcingUpdate): false,
+                    Symbol(enzyme.__setState__): [Function],
+                  },
+                  "runId": 3,
+                  "unboundDepsCount": 6,
+                },
+              },
+            },
+            "name": "HintHuntModel@10.clues",
+            "pendingKeys": Map {
+              "$$typeof" => false,
+              "nodeType" => false,
+              "@@__IMMUTABLE_ITERABLE__@@" => false,
+              "@@__IMMUTABLE_RECORD__@@" => false,
+              "_isMockFunction" => false,
+              "toJSON" => false,
+            },
+            "proxy": [Circular],
+            "target": Object {
+              "A": Array [
+                WordModel {
+                  "found": false,
+                  "word": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@9.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@9",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "B",
+                      "found" => false,
+                    },
+                  },
+                },
+              ],
+              "C": Array [
+                WordModel {
+                  "found": false,
+                  "word": "D",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@12.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@12",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "D",
+                      "found" => false,
+                    },
+                  },
+                },
+              ],
+              Symbol(mobx administration): [Circular],
+            },
+            "values": Map {
+              "A" => Array [
+                WordModel {
+                  "found": false,
+                  "word": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@9.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@9",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "B",
+                      "found" => false,
+                    },
+                  },
+                },
+              ],
+              "C" => Array [
+                WordModel {
+                  "found": false,
+                  "word": "D",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@12.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@12",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "D",
+                      "found" => false,
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+        "leftRightSymbol": "⟫",
+        "modal": ModalModel {
+          "buttonDisabled": false,
+          "date": null,
+          "heading": "",
+          "loading": false,
+          "visible": false,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "ModalModel@11.keys",
+              "observers": Set {},
+            },
+            "name": "ModalModel@11",
+            "target": [Circular],
+            "values": Map {
+              "visible" => false,
+              "heading" => "",
+              "loading" => false,
+              "date" => null,
+              "buttonDisabled" => false,
+            },
+          },
+        },
+        "showAnswers": false,
+        "showWin": false,
+        "title": "",
+        "upDownSymbol": "∧",
+        "words": Array [
+          WordModel {
+            "found": false,
+            "word": "B",
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "WordModel@9.keys",
+                "observers": Set {},
+              },
+              "name": "WordModel@9",
+              "target": [Circular],
+              "values": Map {
+                "word" => "B",
+                "found" => false,
+              },
+            },
+          },
+          WordModel {
+            "found": false,
+            "word": "D",
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "WordModel@12.keys",
+                "observers": Set {},
+              },
+              "name": "WordModel@12",
+              "target": [Circular],
+              "values": Map {
+                "word" => "D",
+                "found" => false,
+              },
+            },
+          },
+        ],
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "HintHuntModel@10.keys",
+            "observers": Set {},
+          },
+          "name": "HintHuntModel@10",
+          "target": [Circular],
+          "values": Map {
+            "board" => undefined,
+            "clues" => Object {
+              "A": Array [
+                WordModel {
+                  "found": false,
+                  "word": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@9.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@9",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "B",
+                      "found" => false,
+                    },
+                  },
+                },
+              ],
+              "C": Array [
+                WordModel {
+                  "found": false,
+                  "word": "D",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@12.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@12",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "D",
+                      "found" => false,
+                    },
+                  },
+                },
+              ],
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": true,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 3,
+                  "lowestObserverState": 0,
+                  "name": "HintHuntModel@10.clues.keys",
+                  "observers": Set {
+                    Reaction$$1 {
+                      "__mapid": "#13",
+                      "_isRunning": false,
+                      "_isScheduled": false,
+                      "_isTrackPending": false,
+                      "dependenciesState": 0,
+                      "diffValue": 0,
+                      "errorHandler": undefined,
+                      "isDisposed": false,
+                      "isTracing": 0,
+                      "name": "CluesList#undefined.render()",
+                      "newObserving": null,
+                      "observing": Array [
+                        Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": true,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 3,
+                          "lowestObserverState": 0,
+                          "name": "reactive props",
+                          "observers": Set {
+                            [Circular],
+                          },
+                          "onBecomeObserved": [Function],
+                          "onBecomeUnobserved": [Function],
+                        },
+                        [Circular],
+                        [Circular],
+                        Array [
+                          WordModel {
+                            "found": false,
+                            "word": "B",
+                            Symbol(mobx did run lazy initializers): true,
+                            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                              "defaultEnhancer": [Function],
+                              "keysAtom": Atom$$1 {
+                                "diffValue": 0,
+                                "isBeingObserved": false,
+                                "isPendingUnobservation": false,
+                                "lastAccessedBy": 0,
+                                "lowestObserverState": 2,
+                                "name": "WordModel@9.keys",
+                                "observers": Set {},
+                              },
+                              "name": "WordModel@9",
+                              "target": [Circular],
+                              "values": Map {
+                                "word" => "B",
+                                "found" => false,
+                              },
+                            },
+                          },
+                        ],
+                        false,
+                        Array [
+                          WordModel {
+                            "found": false,
+                            "word": "D",
+                            Symbol(mobx did run lazy initializers): true,
+                            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                              "defaultEnhancer": [Function],
+                              "keysAtom": Atom$$1 {
+                                "diffValue": 0,
+                                "isBeingObserved": false,
+                                "isPendingUnobservation": false,
+                                "lastAccessedBy": 0,
+                                "lowestObserverState": 2,
+                                "name": "WordModel@12.keys",
+                                "observers": Set {},
+                              },
+                              "name": "WordModel@12",
+                              "target": [Circular],
+                              "values": Map {
+                                "word" => "D",
+                                "found" => false,
+                              },
+                            },
+                          },
+                        ],
+                      ],
+                      "onInvalidate": [Function],
+                      "reactComponent": CluesList {
+                        "context": Object {},
+                        "refs": Object {},
+                        "render": [Function],
+                        "setState": [Function],
+                        "updater": Updater {
+                          "_callbacks": Array [],
+                          "_renderer": ReactShallowRenderer {
+                            "_context": Object {},
+                            "_element": <CluesList
+                              store={[Circular]}
+                            />,
+                            "_forcedUpdate": false,
+                            "_instance": [Circular],
+                            "_newState": null,
+                            "_rendered": <div>
+                              <Clue
+                                answers={
+                                  Array [
+                                    WordModel {
+                                      "found": false,
+                                      "word": "B",
+                                      Symbol(mobx did run lazy initializers): true,
+                                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                                        "defaultEnhancer": [Function],
+                                        "keysAtom": Atom$$1 {
+                                          "diffValue": 0,
+                                          "isBeingObserved": false,
+                                          "isPendingUnobservation": false,
+                                          "lastAccessedBy": 0,
+                                          "lowestObserverState": 2,
+                                          "name": "WordModel@9.keys",
+                                          "observers": Set {},
+                                        },
+                                        "name": "WordModel@9",
+                                        "target": [Circular],
+                                        "values": Map {
+                                          "word" => "B",
+                                          "found" => false,
+                                        },
+                                      },
+                                    },
+                                  ]
+                                }
+                                show={false}
+                                text="A"
+                              />
+                              <Clue
+                                answers={
+                                  Array [
+                                    WordModel {
+                                      "found": false,
+                                      "word": "D",
+                                      Symbol(mobx did run lazy initializers): true,
+                                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                                        "defaultEnhancer": [Function],
+                                        "keysAtom": Atom$$1 {
+                                          "diffValue": 0,
+                                          "isBeingObserved": false,
+                                          "isPendingUnobservation": false,
+                                          "lastAccessedBy": 0,
+                                          "lowestObserverState": 2,
+                                          "name": "WordModel@12.keys",
+                                          "observers": Set {},
+                                        },
+                                        "name": "WordModel@12",
+                                        "target": [Circular],
+                                        "values": Map {
+                                          "word" => "D",
+                                          "found" => false,
+                                        },
+                                      },
+                                    },
+                                  ]
+                                }
+                                show={false}
+                                text="C"
+                              />
+                            </div>,
+                            "_rendering": false,
+                            "_updater": [Circular],
+                          },
+                        },
+                        Symbol(props value holder): Object {
+                          "store": [Circular],
+                        },
+                        Symbol(skipRender): false,
+                        Symbol(props atom holder): Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": true,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 3,
+                          "lowestObserverState": 0,
+                          "name": "reactive props",
+                          "observers": Set {
+                            [Circular],
+                          },
+                          "onBecomeObserved": [Function],
+                          "onBecomeUnobserved": [Function],
+                        },
+                        Symbol(state atom holder): Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "reactive state",
+                          "observers": Set {},
+                          "onBecomeObserved": [Function],
+                          "onBecomeUnobserved": [Function],
+                        },
+                        Symbol(state value holder): null,
+                        Symbol(isForcingUpdate): false,
+                        Symbol(enzyme.__setState__): [Function],
+                      },
+                      "runId": 3,
+                      "unboundDepsCount": 6,
+                    },
+                  },
+                },
+                "name": "HintHuntModel@10.clues",
+                "pendingKeys": Map {
+                  "$$typeof" => false,
+                  "nodeType" => false,
+                  "@@__IMMUTABLE_ITERABLE__@@" => false,
+                  "@@__IMMUTABLE_RECORD__@@" => false,
+                  "_isMockFunction" => false,
+                  "toJSON" => false,
+                },
+                "proxy": [Circular],
+                "target": Object {
+                  "A": Array [
+                    WordModel {
+                      "found": false,
+                      "word": "B",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "WordModel@9.keys",
+                          "observers": Set {},
+                        },
+                        "name": "WordModel@9",
+                        "target": [Circular],
+                        "values": Map {
+                          "word" => "B",
+                          "found" => false,
+                        },
+                      },
+                    },
+                  ],
+                  "C": Array [
+                    WordModel {
+                      "found": false,
+                      "word": "D",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "WordModel@12.keys",
+                          "observers": Set {},
+                        },
+                        "name": "WordModel@12",
+                        "target": [Circular],
+                        "values": Map {
+                          "word" => "D",
+                          "found" => false,
+                        },
+                      },
+                    },
+                  ],
+                  Symbol(mobx administration): [Circular],
+                },
+                "values": Map {
+                  "A" => Array [
+                    WordModel {
+                      "found": false,
+                      "word": "B",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "WordModel@9.keys",
+                          "observers": Set {},
+                        },
+                        "name": "WordModel@9",
+                        "target": [Circular],
+                        "values": Map {
+                          "word" => "B",
+                          "found" => false,
+                        },
+                      },
+                    },
+                  ],
+                  "C" => Array [
+                    WordModel {
+                      "found": false,
+                      "word": "D",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "WordModel@12.keys",
+                          "observers": Set {},
+                        },
+                        "name": "WordModel@12",
+                        "target": [Circular],
+                        "values": Map {
+                          "word" => "D",
+                          "found" => false,
+                        },
+                      },
+                    },
+                  ],
+                },
+              },
+            },
+            "words" => Array [
+              WordModel {
+                "found": false,
+                "word": "B",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "WordModel@9.keys",
+                    "observers": Set {},
+                  },
+                  "name": "WordModel@9",
+                  "target": [Circular],
+                  "values": Map {
+                    "word" => "B",
+                    "found" => false,
+                  },
+                },
+              },
+              WordModel {
+                "found": false,
+                "word": "D",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "WordModel@12.keys",
+                    "observers": Set {},
+                  },
+                  "name": "WordModel@12",
+                  "target": [Circular],
+                  "values": Map {
+                    "word" => "D",
+                    "found" => false,
+                  },
+                },
+              },
+            ],
+            "title" => "",
+            "modal" => ModalModel {
+              "buttonDisabled": false,
+              "date": null,
+              "heading": "",
+              "loading": false,
+              "visible": false,
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "ModalModel@11.keys",
+                  "observers": Set {},
+                },
+                "name": "ModalModel@11",
+                "target": [Circular],
+                "values": Map {
+                  "visible" => false,
+                  "heading" => "",
+                  "loading" => false,
+                  "date" => null,
+                  "buttonDisabled" => false,
+                },
+              },
+            },
+            "showWin" => false,
+            "showAnswers" => false,
+            "leftRightSymbol" => "⟫",
+            "upDownSymbol" => "∧",
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Clue
+          answers={
+            Array [
+              WordModel {
+                "found": false,
+                "word": "B",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "WordModel@9.keys",
+                    "observers": Set {},
+                  },
+                  "name": "WordModel@9",
+                  "target": [Circular],
+                  "values": Map {
+                    "word" => "B",
+                    "found" => false,
+                  },
+                },
+              },
+            ]
+          }
+          show={false}
+          text="A"
+        />,
+        <Clue
+          answers={
+            Array [
+              WordModel {
+                "found": false,
+                "word": "D",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "WordModel@12.keys",
+                    "observers": Set {},
+                  },
+                  "name": "WordModel@12",
+                  "target": [Circular],
+                  "values": Map {
+                    "word" => "D",
+                    "found" => false,
+                  },
+                },
+              },
+            ]
+          }
+          show={false}
+          text="C"
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "A",
+        "nodeType": "class",
+        "props": Object {
+          "answers": Array [
+            WordModel {
+              "found": false,
+              "word": "B",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "WordModel@9.keys",
+                  "observers": Set {},
+                },
+                "name": "WordModel@9",
+                "target": [Circular],
+                "values": Map {
+                  "word" => "B",
+                  "found" => false,
+                },
+              },
+            },
+          ],
+          "show": false,
+          "text": "A",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "C",
+        "nodeType": "class",
+        "props": Object {
+          "answers": Array [
+            WordModel {
+              "found": false,
+              "word": "D",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "WordModel@12.keys",
+                  "observers": Set {},
+                },
+                "name": "WordModel@12",
+                "target": [Circular],
+                "values": Map {
+                  "word" => "D",
+                  "found" => false,
+                },
+              },
+            },
+          ],
+          "show": false,
+          "text": "C",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Clue
+            answers={
+              Array [
+                WordModel {
+                  "found": false,
+                  "word": "B",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@9.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@9",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "B",
+                      "found" => false,
+                    },
+                  },
+                },
+              ]
+            }
+            show={false}
+            text="A"
+          />,
+          <Clue
+            answers={
+              Array [
+                WordModel {
+                  "found": false,
+                  "word": "D",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "WordModel@12.keys",
+                      "observers": Set {},
+                    },
+                    "name": "WordModel@12",
+                    "target": [Circular],
+                    "values": Map {
+                      "word" => "D",
+                      "found" => false,
+                    },
+                  },
+                },
+              ]
+            }
+            show={false}
+            text="C"
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "A",
+          "nodeType": "class",
+          "props": Object {
+            "answers": Array [
+              WordModel {
+                "found": false,
+                "word": "B",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "WordModel@9.keys",
+                    "observers": Set {},
+                  },
+                  "name": "WordModel@9",
+                  "target": [Circular],
+                  "values": Map {
+                    "word" => "B",
+                    "found" => false,
+                  },
+                },
+              },
+            ],
+            "show": false,
+            "text": "A",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "C",
+          "nodeType": "class",
+          "props": Object {
+            "answers": Array [
+              WordModel {
+                "found": false,
+                "word": "D",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "WordModel@12.keys",
+                    "observers": Set {},
+                  },
+                  "name": "WordModel@12",
+                  "target": [Circular],
+                  "values": Map {
+                    "word" => "D",
+                    "found" => false,
+                  },
+                },
+              },
+            ],
+            "show": false,
+            "text": "C",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
