@@ -45,9 +45,12 @@ function addToDatabase(date, puzzle, clues, title, database) {
   });
 }
 
+/*
+  command - npm run generate [M]M-[D]D-YYYY filename
+*/
 if(process.argv[2]) {
   if(process.argv[2] === "help") {
-    console.log("Usage: npm run generate MM/DD/YYYY filename");
+    console.log("Usage: npm run generate [M]M-[D]D-YYYY filename");
     process.exit();
   }
   else {

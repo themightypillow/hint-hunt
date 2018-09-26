@@ -6,6 +6,7 @@ import Loader from "./Loader";
 @observer
 class Modal extends React.Component {
   handleDayClick = (day) => {
+    // don't fetch from database if the same day is selected twice
     if(this.props.store.modal.date === null || 
     day.toDateString() !== this.props.store.modal.date.toDateString()) {
       const store = this.props.store;
