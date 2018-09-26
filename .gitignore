@@ -1,5 +1,7 @@
 node_modules/
 notes/
 puzzles/
+dist/
 .env
 .env.test
+stats.json

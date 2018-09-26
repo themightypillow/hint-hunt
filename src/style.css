@@ -1,4 +1,6 @@
 @import "normalize.css";
+@import "animate.css/animate.css";
+@import "react-day-picker/lib/style.css";
 @import "styles/base/_global.css";
 @import "styles/base/_mixins.css";
 @import "styles/modules/_hinthunt.css";

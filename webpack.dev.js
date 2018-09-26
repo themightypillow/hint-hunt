@@ -1,6 +1,5 @@
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const env = require("dotenv").config();
 if(env.error) throw env.error;
@@ -10,12 +9,8 @@ const htmlPlugin = new HtmlWebpackPlugin({
   filename: "index.html"
 });
 
-const cssPlugin = new MiniCssExtractPlugin({
-  filename: "style.css"
-});
-
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: ["babel-polyfill", "./src/index.js"],
   module: {
     rules: [
@@ -29,7 +24,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          "style-loader",
           "css-loader",
           {
             loader: "postcss-loader",
@@ -41,7 +36,6 @@ module.exports = {
                 require("postcss-nested")(),
                 require("autoprefixer")(),
                 require("postcss-simple-vars")(),
-                require("cssnano")()
               ]
             }
           }
@@ -51,7 +45,6 @@ module.exports = {
   },
   plugins: [
     htmlPlugin,
-    cssPlugin,
     new webpack.DefinePlugin({
       "process.env.FIREBASE_APIKEY": JSON.stringify(process.env.FIREBASE_APIKEY),
       "process.env.FIREBASE_AUTHDOMAIN": JSON.stringify(process.env.FIREBASE_AUTHDOMAIN),
@@ -61,5 +54,5 @@ module.exports = {
       "process.env.FIREBASE_MESSAGINGSENDERID": JSON.stringify(process.env.FIREBASE_MESSAGINGSENDERID)
     })
   ],
-  devtool: "source-map"
+  devtool: "inline-source-map",
 };
