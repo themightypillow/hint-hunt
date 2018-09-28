@@ -38,7 +38,13 @@ class ModalModel {
     
     // 'reset' the animated win screen so that it can be animated again the future
     let animateScreen = document.querySelector(".hinthunt_animate");
-    setTimeout(() => animateScreen.classList.remove("hinthunt_animate-on", "hinthunt_animate-visible"), 500);
+    const promise = new Promise((resolve) => {
+      setTimeout(() => {
+        animateScreen.classList.remove("hinthunt_animate-on", "hinthunt_animate-visible");
+        resolve();
+      }, 500);
+    });
+    return promise;
   }
 }
 

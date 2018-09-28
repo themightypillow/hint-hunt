@@ -43,6 +43,9 @@ describe("mouse events", () => {
   const store = new HintHuntModel();
   store.checkWin = jest.fn();
   store.toggleAnswers = jest.fn();
+  store.resetArrows = jest.fn();
+  store.showAnimation = jest.fn();
+  store.switchArrows = jest.fn();
   store.board = {
     checkGuess: jest.fn()
   };
@@ -62,5 +65,38 @@ describe("mouse events", () => {
     expect(store.toggleAnswers).toHaveBeenCalled();
   });
 
-  // test handleClick and handleArrowClick
+  test("should add show class on leftRight arrow button click", () => {
+    let newDiv = document.createElement("div");
+    newDiv.classList.add("hinthunt_side");
+    document.body.appendChild(newDiv);
+    wrapper.find(".hinthunt_leftright-arrow").simulate("click");
+    expect(document.querySelector(".hinthunt_side").classList.contains("hinthunt_side-show")).toBeTruthy();
+  });
+
+  test("should have called switchArrows on previous click", () => {
+    expect(store.switchArrows).toHaveBeenCalled();
+  });
+
+  test("should remove show class on Select Hunt click", () => {
+    wrapper.find(".hinthunt_btn").at(1).simulate("click");
+    expect(document.querySelector(".hinthunt_side").classList.contains("hinthunt_side-show")).toBeFalsy();
+  });
+
+  test("should have called resetArrows on previous click", () => {
+    expect(store.resetArrows).toHaveBeenCalled();
+  });
+
+  test("should have called showAnimation on previous click", () => {
+    expect(store.showAnimation).toHaveBeenCalledWith(0);
+  });
+
+  test("should add show class on upDown arrow button click", () => {
+    wrapper.find(".hinthunt_updown-arrow").simulate("click");
+    expect(document.querySelector(".hinthunt_side").classList.contains("hinthunt_side-show")).toBeTruthy();
+  });
+
+  test("should have called switchArrows on previous click", () => {
+    expect(store.switchArrows).toHaveBeenCalledTimes(2);
+  });
+
 });

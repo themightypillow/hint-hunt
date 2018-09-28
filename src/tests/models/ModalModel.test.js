@@ -1,4 +1,3 @@
-import { shallow } from "enzyme";
 import ModalModel from "../../models/ModalModel";
 
 describe("ModalModel testing", () => {
@@ -53,6 +52,43 @@ describe("ModalModel testing", () => {
     model.setHeading("A Title");
     expect(model.heading).toBe("Tue Sep 25 2018 - A Title");
   });
+});
 
-  // test showCalendar()
-})
+describe("testing showCalendar", () => {
+  let model, removeSpy;
+
+  beforeAll(() => {
+    const newDiv = document.createElement("div");
+    newDiv.className = "hinthunt_animate";
+    document.body.appendChild(newDiv);
+    removeSpy = jest.spyOn(newDiv.classList, "remove");
+    model = new ModalModel();
+  });
+
+  test("should have called remove once", (done) => {
+    model.showCalendar().then(() => {
+      expect(removeSpy).toHaveBeenCalled();
+      done();
+    });
+  });
+
+  test("visible is true", () => {
+    expect(model.visible).toBeTruthy();
+  });
+
+  test("heading is correct", () => {
+    expect(model.heading).toBe("Choose a Date");
+  });
+
+  test("loading is false", () => {
+    expect(model.loading).toBeFalsy();
+  });
+
+  test("date is null", () => {
+    expect(model.date).toBeNull();
+  });
+
+  test("button is disabled", () => {
+    expect(model.buttonDisabled).toBeTruthy();
+  });
+});

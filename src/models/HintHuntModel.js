@@ -107,11 +107,15 @@ class HintHuntModel {
   @action showAnimation = (ms) => {
     let animateScreen = document.querySelector(".hinthunt_animate");
     animateScreen.classList.add("hinthunt_animate-on", "animated", "zoomIn", "hinthunt_animate-visible");
-    setTimeout(() => {
-      animateScreen.classList.remove("animated", "zoomIn");
-      animateScreen.classList.add("animated", "fadeOut");
-      this.modal.showCalendar();
-    }, ms);
+    const promise = new Promise((resolve) => {
+      setTimeout(() => {
+        animateScreen.classList.remove("animated", "zoomIn");
+        animateScreen.classList.add("animated", "fadeOut");
+        this.modal.showCalendar();
+        resolve();
+      }, ms);
+    });
+    return promise;
   }
 
   // Fires when the user clicks the Show Words/Hide Words button

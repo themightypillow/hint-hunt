@@ -28,5 +28,26 @@ describe("returning className from list", () => {
   }
 });
 
-// test toggleClues
-// test hideClues
+test("toggleClues adds the show class", () => {
+  let newDiv = document.createElement("div");
+  newDiv.className = "hinthunt_side";
+  document.body.appendChild(newDiv);
+  toggleClues();
+  expect(document.querySelector(".hinthunt_side").classList.contains("hinthunt_side-show")).toBeTruthy();
+});
+
+test("toggleClues removes the show class", () => {
+  let newDiv = document.createElement("div");
+  newDiv.classList.add("hinthunt_side", "hinthunt_side-show");
+  document.body.appendChild(newDiv);
+  toggleClues();
+  expect(document.querySelector(".hinthunt_side").classList.contains("hinthunt_side-show")).toBeFalsy();
+});
+
+test("hideCLues removes the show class", () => {
+  let newDiv = document.createElement("div");
+  newDiv.classList.add("hinthunt_side", "hinthunt_side-show");
+  document.body.appendChild(newDiv);
+  hideClues();
+  expect(document.querySelector(".hinthunt_side").classList.contains("hinthunt_side-show")).toBeFalsy();
+});

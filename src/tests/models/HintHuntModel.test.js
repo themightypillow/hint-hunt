@@ -13,6 +13,7 @@ afterAll((done) => {
 
 describe("testing HintHuntModel", () => {
   const model = new HintHuntModel();
+  const animationSpy = jest.spyOn(model, "showAnimation");
 
   test("should set board to undefined by default", () => {
     expect(model.board).toBe(undefined);
@@ -55,14 +56,6 @@ describe("testing HintHuntModel", () => {
     expect(model.showAnswers).toBeTruthy();
   });
 
-  test("should switch leftRightSymbol to left and upDownSymbol to down", () => {
-    model.switchArrows();
-    expect(
-      model.leftRightSymbol === "⟪" &&
-      model.upDownSymbol === "∨"
-    ).toBeTruthy();
-  });
-
   test("should setup clues correctly", () => {
     const cluesData = {
       A: ["B"],
@@ -81,21 +74,80 @@ describe("testing HintHuntModel", () => {
     expect(model.words.length > 0).toBeTruthy();
   });
 
-  // test("should handle win scenario", () => {
-  //   model.board = new BoardModel(["A", "B", "C", "D"], model.words);
-  //   model.board.win = true;
-  //   model.checkWin();
-  //   expect(model.showWin).toBeTruthy();
-  // });
+  test("should switch leftRightSymbol to left and upDownSymbol to down", () => {
+    model.switchArrows();
+    expect(
+      model.leftRightSymbol === "⟪" &&
+      model.upDownSymbol === "∨"
+    ).toBeTruthy();
+  });
 
-  // test("should have reset arrows after win", () => {
-  //   expect(
-  //     model.leftRightSymbol === "⟫" &&
-  //     model.upDownSymbol === "∧"
-  //   ).toBeTruthy();
-  // });
+  test("should reset both leftRight and upDown symbols", () => {
+    model.resetArrows();
+    expect(
+      model.leftRightSymbol === "⟫" &&
+      model.upDownSymbol === "∧"
+    ).toBeTruthy();
+  });
 
-  // test showAnimation()
+});
+
+describe("testing show animation", () => {
+  let model, modalSpy, newDiv, addSpy, removeSpy;
+
+  beforeAll(() => {
+    model = new HintHuntModel();
+    modalSpy = spyOn(model.modal, "showCalendar");
+    newDiv = document.createElement("div");
+    newDiv.className = "hinthunt_animate";
+    document.body.appendChild(newDiv);
+    addSpy = spyOn(newDiv.classList, "add");
+    removeSpy = spyOn(newDiv.classList, "remove");
+  });
+
+  test("should have called add twice", (done) => {
+    model.showAnimation(0).then(() => {
+      expect(addSpy).toHaveBeenCalledTimes(2);
+      done();
+    });
+  });
+
+  test("should have called remove", () => {
+    expect(removeSpy).toHaveBeenCalled();
+  });
+
+  test("should have called showCalendar", () => {
+    expect(modalSpy).toHaveBeenCalled();
+  });
+});
+
+describe("testing checkWin", () => {
+  let model, resetSpy, animationSpy;
+
+  beforeAll(() => {
+    let newDiv = document.createElement("div");
+    newDiv.classList.add("hinthunt_side", "hinthunt_side-show");
+    document.body.appendChild(newDiv);
+    model = new HintHuntModel();
+    resetSpy = spyOn(model, "resetArrows");
+    animationSpy = spyOn(model, "showAnimation");
+  });
+
+  test("should handle win scenario", () => {
+    model.board = new BoardModel(["A", "B", "C", "D"], model.words);
+    model.board.win = true;
+    model.checkWin();
+    expect(model.showWin).toBeTruthy();
+  });
+
+  test("should have called resetArrows", () => {
+    expect(resetSpy).toHaveBeenCalled();
+  });
+
+  test("should have called showAnimation with argument", () => {
+    expect(animationSpy).toHaveBeenCalledWith(1500);
+  });
+
 });
 
 describe("adding puzzle from database", () => {
