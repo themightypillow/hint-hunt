@@ -8,7 +8,8 @@
     "build": "webpack",
     "test": "jest ./src/tests",
     "generate": "node ./src/generator/main.js",
-    "stats": "webpack --profile --json > stats.json"
+    "stats": "webpack --profile --json > stats.json",
+    "coverage": "jest ./src/tests --coverage"
   },
   "author": "Cheri Anne",
   "license": "MIT",

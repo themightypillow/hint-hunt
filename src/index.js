@@ -11,5 +11,5 @@ store.fetchPuzzle(new Date("9/15/2018")).then((snapshot) => {
   render(<HintHunt store={store} />, document.getElementById("index"));
   setTimeout(() => {
     store.modal.hideLoading();
-  }, 1000);
+  }, 750);
 });

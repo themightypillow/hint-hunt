@@ -14,7 +14,7 @@ class Modal extends React.Component {
         store.setPuzzle(snapshot);
         setTimeout(() => {
           store.modal.hideLoading();
-        }, 1500);
+        }, 750);
       });
     }
   }
