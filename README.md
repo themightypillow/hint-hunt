@@ -30,7 +30,7 @@ The server watches any changes to files and reloads automatically
 
 Building will import and minify all js/css files referenced in `src/index.js` and `src/style.css`, resulting in site ready files inside the `docs/` directory. Once you are ready to build, create bundle files with the following command:
 ```
-npm run build
+$ npm run build
 ```
 
 ## Generating Puzzles
@@ -40,7 +40,7 @@ Included is a generator script that will read an input file, generate a word sea
 ### Usage
 
 ```
-npm run generate [M]M-[D]D-YYYY filename
+$ npm run generate [M]M-[D]D-YYYY filename
 ```
 The script takes two arguments:
 1. The date you want associated with this puzzle
@@ -68,12 +68,12 @@ Tests are written for all React components, generator functions, helper function
 
 Run tests
 ```
-npm test
+$ npm test
 ```
 
 Run tests with coverage table
 ```
-npm run coverage
+$ npm run coverage
 ```
 
 #### Requirements
