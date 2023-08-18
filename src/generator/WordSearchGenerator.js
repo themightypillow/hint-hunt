@@ -1,4 +1,4 @@
-// Derived from WordSearch Puzzle Generator by Jamis Buck
+// Modified from WordSearch Puzzle Generator by Jamis Buck
 // https://github.com/jamis/wordsearch
 class WordSearchGenerator {
   constructor(words, rows, columns, grid = []) {
