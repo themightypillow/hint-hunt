@@ -4,13 +4,13 @@ Based on the game Word Roundup&#8482;, Hint Hunt is a hybrid between a word sear
 
 ## URL
 
-<https://cheri-anne.github.io/hint-hunt/>
+
 
 ## Local Setup
 
 Clone the repo where you want the folder to live
 ```
-$ git clone https://github.com/cheri-anne/hint-hunt.git
+$ git clone https://github.com/themightypillow/hint-hunt
 ```
 Change the directory
 ```
@@ -91,8 +91,11 @@ $ npm run coverage
 
 ## Author
 
-* Cheri Anne - [cheri-anne](https://github.com/cheri-anne)
+* Cheri Anne - [themightypillow](https://github.com/themightypillow/)
 
 ## Acknowledgements
 
 * Word-Search Puzzle Generator - [github](https://github.com/jamis/wordsearch)
+
+## License
+Hint Hunt by [Cheri Anne](https://github.com/themightypillow/) is licensed under a [Creative Commons Attribution 4.0 International License.](https://creativecommons.org/licenses/by/4.0/)
